@@ -22,13 +22,15 @@ We are going to be using a pre-configured theme for Hugo called [Ink](https://th
 download the theme from Github [here](https://github.com/knadh/hugo-ink). Click on the Green button called "Code"
 and then "Download Zip."
 
-![Ink GitHub Download](/assets/jamstack-hugo-blog/ink_github_download.png)
+```{r echo = FALSE, out.width = "100%"}
+knitr::include_graphics("images/jamstack-hugo-blog/ink_github_download.png")
+```
 
 When you download the zip file and unzip it, it will most likely be called `hugo-ink-master` simply rename the folder to `ink` and then move it inside of the `themes` folder.
 
 Your hugo project should now look like this:
 
-![Ink Directory listing](/assets/jamstack-hugo-blog/ink_directory_listing.png)
+![Ink Directory listing](images/jamstack-hugo-blog/ink_directory_listing.png)
 
 Inside of the `ink` theme folder is another folder called `exampleSite`. This contains some example content which we can use to temporarily populate our site with some pages and posts.
 
@@ -45,7 +47,7 @@ hugo serve
 
 If everything is configured and setup properly, you should see the following at `http://localhost:1313/`
 
-![Harbor Home Page](/assets/jamstack-hugo-blog/ink-home-page.jpg)
+![Harbor Home Page](images/jamstack-hugo-blog/ink-home-page.jpg)
 
 _**Your site might have a white background which is fine, this theme has both light and dark themes which are toggled based upon your system preferences.**_
 
@@ -96,7 +98,7 @@ Content goes here...
 
 The homepage should have been updated with your latest post and should look something like this:
 
-![New post on the home page](/assets/jamstack-hugo-blog/new-post.jpg)
+![New post on the home page](images/jamstack-hugo-blog/new-post.jpg)
 
 ## Pushing our project to GitHub
 
@@ -108,17 +110,17 @@ _**Your GitHub may not be dark like mine, I am using their dark theme, which is 
 
 Create a new repository by clicking the `+` in the upper right hand corner , next to the bell icon, then "New repository"
 
-![GitHub create new repository](/assets/jamstack-hugo-blog/new-repo.jpg)
+![GitHub create new repository](images/jamstack-hugo-blog/new-repo.jpg)
 
 Fill out the repository name and description field and choose whether or not to make the repo private or public. It doesn't matter which one you choose. Netlify will work with both public and private repos.
 
-![GitHub create repo screen](/assets/jamstack-hugo-blog/github_create_repo.png)
+![GitHub create repo screen](images/jamstack-hugo-blog/github_create_repo.png)
 
 Then click the green button "Create repository"
 
 You should then be presented with a screen that looks similar to this:
 
-![GitHub empty repo screen](/assets/jamstack-hugo-blog/github_empty_repo.png)
+![GitHub empty repo screen](images/jamstack-hugo-blog/github_empty_repo.png)
 
 _**This next section requires you to have [Git](https://git-scm.com/) installed. If you do not have Git installed, you can download it [here](https://git-scm.com/downloads)**_
 
@@ -133,7 +135,7 @@ git commit -m "init commit" # creates a new commit with the message "init commit
 Then you are going to need to copy the url for your git repo in GitHub. It is located in this section of your empty
 GitHub repo.
 
-![GitHub empty repo instructions](/assets/jamstack-hugo-blog/github-instructions.jpg)
+![GitHub empty repo instructions](images/jamstack-hugo-blog/github-instructions.jpg)
 
 Paste it into your terminal:
 
@@ -149,7 +151,7 @@ git push -u origin master
 
 Refresh GitHub and you should see the following:
 
-![GitHub repo pushed](/assets/jamstack-hugo-blog/github-repo-pushed.jpg)
+![GitHub repo pushed](images/jamstack-hugo-blog/github-repo-pushed.jpg)
 
 Now you are all set and ready to deploy with Netlify
 
@@ -160,39 +162,39 @@ Now that our site is all setup and running, let's learn how to deploy our static
 
 Once you sign up, you should land on a dashboard which looks like the following:
 
-![Netlify Dashboard](/assets/jamstack-hugo-blog/netlify-dashboard.jpg)
+![Netlify Dashboard](images/jamstack-hugo-blog/netlify-dashboard.jpg)
 
 Click on the "New site from Git" button.
 
 On the next screen, click on the "GitHub" button
 
-![Netlify Connect to Git Provider](/assets/jamstack-hugo-blog/netlify-git-provider.jpg)
+![Netlify Connect to Git Provider](images/jamstack-hugo-blog/netlify-git-provider.jpg)
 
 You will want to connect your GitHub account to Netlify and give them access to all of your repos.
 
 You will then need to seach for the repo we just created and select it. I named mine `hugo-blog` so I can easily seach for it in the search bar.
 
-![Netlify Pick a repository](/assets/jamstack-hugo-blog/netlify-pick-a-repo.jpg)
+![Netlify Pick a repository](images/jamstack-hugo-blog/netlify-pick-a-repo.jpg)
 
 It should automatically detect that this is a Hugo project and fill in the form fields for you. Just in case it doesn't, the build command is `hugo` and the publish directory is `public`.
 
-![Netlify Deploy Settings](/assets/jamstack-hugo-blog/netlify-deploy-settings.png)
+![Netlify Deploy Settings](images/jamstack-hugo-blog/netlify-deploy-settings.png)
 
 The click the green button "Deploy site"
 
 You should then be taken back to the site dashboard where the site will begin to deploy. It shouldn't take very long before you see a random url at the top.
 
-![Netlify Site Deployed Dashboard](/assets/jamstack-hugo-blog/netlify-deployed-site-dashboard.jpg)
+![Netlify Site Deployed Dashboard](images/jamstack-hugo-blog/netlify-deployed-site-dashboard.jpg)
 
 Click on the green url and it should take you to our new Hugo site!
 
-![Broken Site](/assets/jamstack-hugo-blog/netlify-site-broken.png)
+![Broken Site](images/jamstack-hugo-blog/netlify-site-broken.png)
 
 Wait!?! Why is our site broken?
 
 If we inspect our site using Chrome dev tools and open up the console we can see we have some mixed content warnings and a reference to `http://example.org`. Where is this url coming from?
 
-![Broken Site Dev Console](/assets/jamstack-hugo-blog/broken-site-dev-console.jpg)
+![Broken Site Dev Console](images/jamstack-hugo-blog/broken-site-dev-console.jpg)
 
 If you open up `config.toml` you will see the following on line 1:
 
@@ -218,7 +220,7 @@ Once our change has been pushed up to GitHub, Netlify will automatically detect 
 
 If you refresh your Netlify url, the site should be fixed.
 
-![Netlify Site Fixed](/assets/jamstack-hugo-blog/netlify-site-fixed.jpg)
+![Netlify Site Fixed](images/jamstack-hugo-blog/netlify-site-fixed.jpg)
 
 ## Integrating Netlify CMS
 
@@ -228,7 +230,7 @@ First, we need to create an admin folder which is where the CMS will live. Since
 
 Within the `/static/admin` folder create 2 new files: `index.html` & `config.yml`.
 
-![Netlify CMS Admin Folder](/assets/jamstack-hugo-blog/netlify_cms_admin_folder.png)
+![Netlify CMS Admin Folder](images/jamstack-hugo-blog/netlify_cms_admin_folder.png)
 
 Open up `static/admin/index.html` and add the following:
 
@@ -333,19 +335,19 @@ git push
 
 Next, let's setup Netlify Identity which is Netlify's built in authentication service so that we can log into our cms.
 
-![Netlify Identity](/assets/jamstack-hugo-blog/netlify_identity.png)
+![Netlify Identity](images/jamstack-hugo-blog/netlify_identity.png)
 
 Within your Netlify site's dashboard, click on `Site settings` at the top adn then `Identity` on the left sidebar. Then click on the Green "Enable Identity" button.
 
-![Netlify Registration Preferences](/assets/jamstack-hugo-blog/netlify_registration_preferences.png)
+![Netlify Registration Preferences](images/jamstack-hugo-blog/netlify_registration_preferences.png)
 
 You can leave the "Open" radio button selected for now and click "Save"
 
-![Netlify Registration Preferences Open](/assets/jamstack-hugo-blog/netlify_registration_preferences_open.png)
+![Netlify Registration Preferences Open](images/jamstack-hugo-blog/netlify_registration_preferences_open.png)
 
 Scroll down towards the very bottom of the page and click on "Enable Git Gateway" under the "Services" heading.
 
-![Netlify Enable Git Gateway](/assets/jamstack-hugo-blog/netlify_services_git_gateway.png)
+![Netlify Enable Git Gateway](images/jamstack-hugo-blog/netlify_services_git_gateway.png)
 
 ### Netlify Identity Widget
 
@@ -516,7 +518,7 @@ git push
 Now navigate to your Netlify url and add `/admin` at the end. For instance mine is
 `https://reverent-liskov-4cbe35.netlify.app/admin`.
 
-![Netlify Identity Login](/assets/jamstack-hugo-blog/netlify_identity_login.png)
+![Netlify Identity Login](images/jamstack-hugo-blog/netlify_identity_login.png)
 
 Click on the "Login with Netlify Identity" button.
 
@@ -524,17 +526,17 @@ Then click on the "Sign up" tab and fill out the form and click the "Sign up" bu
 
 _*Make sure to use your actual email address as you will need to click a link to confirm your identity.**_
 
-![Netlify Identity Signup](/assets/jamstack-hugo-blog/netlify_identity_signup.png)
+![Netlify Identity Signup](images/jamstack-hugo-blog/netlify_identity_signup.png)
 
 Open the email that is sent to you and confirm your email address. You should now be logged in and presented with the CMS admin dashboard.
 
-![Netlify CMS Dashboard](/assets/jamstack-hugo-blog/netlify_cms_dashboard.png)
+![Netlify CMS Dashboard](images/jamstack-hugo-blog/netlify_cms_dashboard.png)
 
 You can now edit and create new posts with Netlify CMS!
 
 Open up one of the posts and edit some of the content and click on the "Publish" button in the upper right hand corner. Then click "Publish Now"
 
-![Netlify CMS Publish Button](/assets/jamstack-hugo-blog/netlify_cms_publish_btn.png)
+![Netlify CMS Publish Button](images/jamstack-hugo-blog/netlify_cms_publish_btn.png)
 
 Clicking this button will send a webhook to Netlify which will begin to build and deploy the site automatically. Pretty slick 😎
 
@@ -560,17 +562,17 @@ Before we can setup Zapier, however, we need to first configure Netlify to accep
 
 Head back over to your Netlify dashboard and click on "Site settings" and then "Build & deploy" on the left sidebar. Scroll down to you see a "Build hooks" section.
 
-![Netlify Build Hooks](/assets/jamstack-hugo-blog/netlify_build_hooks.png)
+![Netlify Build Hooks](images/jamstack-hugo-blog/netlify_build_hooks.png)
 
 Click the "Add build hook" button.
 
 Give your hook a name and then save it.
 
-![Netlify Build Hook Name](/assets/jamstack-hugo-blog/netlify_build_hook_name.png)
+![Netlify Build Hook Name](images/jamstack-hugo-blog/netlify_build_hook_name.png)
 
 Netlify will then give you a url for the webhook, like so:
 
-![Netlify Build Hook Url](/assets/jamstack-hugo-blog/netlify_build_hook_url.png)
+![Netlify Build Hook Url](images/jamstack-hugo-blog/netlify_build_hook_url.png)
 
 Copy this down or keep this tab open as we will need this Url for Zapier.
 
@@ -578,37 +580,37 @@ Copy this down or keep this tab open as we will need this Url for Zapier.
 
 Head on over to [Zapier](https://zapier.com/) and create a free account. After you are logged in, Go to this [link](https://zapier.com/apps/schedule/integrations/webhook/2845/send-webhook-post-requests-on-a-daily-schedule) to see how to configure a [webhook POST request](https://zapier.com/apps/schedule/integrations/webhook/2845/send-webhook-post-requests-on-a-daily-schedule).
 
-![Zapier Webhook Post](/assets/jamstack-hugo-blog/zapier_webook_post.png)
+![Zapier Webhook Post](images/jamstack-hugo-blog/zapier_webook_post.png)
 
 Click on the "Try it" button.
 
 On the next screen, I setup mine to trigger on the weekends and at 7am.
 
-![Zapier Webhook Post](/assets/jamstack-hugo-blog/zapier_every_day.png)
+![Zapier Webhook Post](images/jamstack-hugo-blog/zapier_every_day.png)
 
 After clicking "Save and Continue," click on the "Test Trigger" button.
 
-![Zapier Test Trigger](/assets/jamstack-hugo-blog/zapier_test_trigger.png)
+![Zapier Test Trigger](images/jamstack-hugo-blog/zapier_test_trigger.png)
 
 Then click on the 2nd section and add in the url from Netlify. I set my payload type to "Raw"
 
-![Zapier Post Setup](/assets/jamstack-hugo-blog/zapier_post_setup.png)
+![Zapier Post Setup](images/jamstack-hugo-blog/zapier_post_setup.png)
 
 You can leave the rest of the fields as they are and then click "Save and continue"
 
 You should then be presented with a "Test action" screen. Click the "Test & Continue" button.
 
-![Zapier Test Action](/assets/jamstack-hugo-blog/zapier_test_action.png)
+![Zapier Test Action](images/jamstack-hugo-blog/zapier_test_action.png)
 
 If all goes well you should see the following.
 
-![Zapier Test Success](/assets/jamstack-hugo-blog/zapier_test_success.png)
+![Zapier Test Success](images/jamstack-hugo-blog/zapier_test_success.png)
 
 Then click on the "Turn on Zap" button to enable it.
 
 Head back to your Netlify dashboard and see if the deploy was triggered. Click on "Deploys" at the top of the screen and check to see what the latest deploy is. It should say something like "Deploy triggered by hook: Zapier at 7am"
 
-![Netlify Hook Success](/assets/jamstack-hugo-blog/netlify_hook_success.png)
+![Netlify Hook Success](images/jamstack-hugo-blog/netlify_hook_success.png)
 
 So now Zapier will send a webhook at 7am every single day and Netlify will deploy a fresh copy of your site at the same time. So all you have to do is enter the date in your articles front-matter on which you would like your article to be published live on your site and the rest is handle for you automatically!
 
