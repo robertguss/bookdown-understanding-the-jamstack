@@ -1,4 +1,4 @@
-# Project: Blog with Hugo, Netlify CMS & Zapier
+# Blog with Hugo, Netlify CMS & Zapier
 
 In this project we are going to build a blog using the [Hugo](https://gohugo.io) Static Site Generator, which we will then deploy to Netlify as our hosting provider. Once our blog is complete and live on Netlify, we will then integrate [Zapier](https://zapier.com/) to trigger automatic deploys/builds of our site. This will allow us to write blog posts ahead of time by setting a publish date some time in the future and then Zapier will notify Netlify to build our site so that the entire process is automated.
 

@@ -1,4 +1,4 @@
-project-blog-with-hugo-netlify-cms-zapier
+blog-with-hugo-netlify-cms-zapier
 installing-hugo
 creating-the-blog
 instant-reload-creating-new-posts

@@ -1,8 +1,8 @@
 book_filename: 'Understanding the Jamstack'
 delete_merged_file: true
 new_session: yes
-language:
-  ui:
-    chapter_name: 'Chapter '
+# language:
+#   ui:
+#     chapter_name: 'Chapter '
 
-rmd_files: ['project_hugo_blog.Rmd']
+rmd_files: ['index.Rmd', 'projects.Rmd', 'project_hugo_blog.Rmd']

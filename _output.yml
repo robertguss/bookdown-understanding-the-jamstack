@@ -1,23 +1,39 @@
+# Bootstrap 4
 bookdown::bs4_book:
-  # css: custom.css
   theme:
     primary: '#637238'
   repo: https://github.com/robertguss/howtocode-understanding-the-jamstack
   includes:
     in_header: [header.html]
+
+# Gitbook
 bookdown::gitbook:
-  css: style.css
+  # css: style.css
+  includes:
+    in_header: [header.html]
   config:
     toc:
       before: |
         <li><a href="./">Understanding the Jamstack</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    download: ['pdf', 'epub']
+    # download: ['pdf', 'epub']
+
+# PDF
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
+
+# EPUB
 bookdown::epub_book: default
+
+# Tufte
+bookdown::tufte_html_book:
+  toc: yes
+
+# Bootstrap
+bookdown::html_book:
+  toc: yes
