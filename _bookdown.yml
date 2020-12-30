@@ -1,0 +1,5 @@
+book_filename: "bs4-theme-test"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
