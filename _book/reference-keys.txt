@@ -1,13 +1,3 @@
-fig:nice-fig
-tab:nice-tab
-prerequisites
-intro
-literature
-methods
-applications
-example-one
-example-two
-final-words
 project-blog-with-hugo-netlify-cms-zapier
 installing-hugo
 creating-the-blog
