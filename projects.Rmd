@@ -1,1 +1,7 @@
-# Projects {-} 
+# Projects {-}
+
+The repo for all of the projects, can be found
+[here](https://github.com/robertguss/howtocode-understanding-the-jamstack)
+
+> Some of the screenshots throughout the projects can be hard to see/read. In order to see them better, simply click on
+them and they should pop up into a lightbox at a much larger width.
