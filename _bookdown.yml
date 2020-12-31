@@ -11,4 +11,5 @@ rmd_files:
     'projects.Rmd',
     'project_hugo_blog.Rmd',
     'project_eleventy_membership.Rmd',
+    'project_gatsby_ecommerce.Rmd',
   ]
