@@ -1,0 +1,54 @@
+# What is the Jamstack?
+
+There has been an increasing trend over the last several years to break up traditional "monolithic" applications and
+architectures into smaller more maintainable pieces & services. The Jamstack is a continuation of that trend.  The
+Jamstack is fundamentally an architecture, a way of designing websites and applications. It is also a philosophy on how
+to build modern sites and applications.
+
+It primarily centers around two very important concepts: [pre-rendering](https://jamstack.org/glossary/pre-render/) and
+[de-coupling](https://jamstack.org/glossary/decoupling/). An important tool in the Jamstack architecture is the Static
+Site Generator which "pre-renders" all of your content into static files, ie `.html`, `.css`, `.js`, etc. This means
+that when a user lands on your site or application, the 'server', most often a CDN, renders that static `.html` file to
+the user. This makes Jamstack sites & applications incredibly fast, secure & reliable.
+
+De-coupling involves breaking up applications into smaller API's, services or systems. This de-coupling allows you to
+create services that are single purpose and ideally do one thing very well. By having a de-coupled architecture you can
+more easily maintain, swap out or replace those services. This also allows you to take advantage of 3rd party services
+and API's which allow you to focus on the areas and domains you know well and let other experts handle the areas and
+domains you don't. Do you really want to role your own authentication or ecommerce solution from scatch, or
+would you gladly pay someone else to handle that for you?
+
+## JavaScript, API's Markup
+
+Now that you understand the two main concepts of the Jamstack, just what exactly is the "Jam" all about? The "Jam" in
+Jamsstack is an acronymn that stands for JavaScript, API's & Markup. These 3 components are the building blocks of any
+Jamstack site or application.
+
+### JavaScript
+
+JavaScript has exploded in popularity over the years and it is showing no signs of slowing down anytime soon. It is also
+what enables Jamstack sites to communicate to various API's and services. JS is responsible for the dynamic aspects of a
+Jamstack application, which often seems to confuse people.
+
+When people hear the word 'static' sites, they assume that there is not dynamic or interactive elements. This could not
+be further from the truth with Jamstack sites and modern front-end ui libraries/frameworks like React, Vue, Angular,
+etc. Jamstack sitess are static in that they serve up pre-rendered static files, however the UX can be as dynamic as you
+wish, as you will later discover in the projects of this book where we build an ecommerce store and membership site.
+
+### API's
+
+API's refers to the services or systems used to build a Jamstack site, the de-coupling aspect. These are most often 3rd
+party services, but you can also create and write your own. The Jamstack ecosytem is incredibly rich will all kinds of
+services for accepting payments, authentication/authohrization, ecommerce, membership, databases, etc.
+
+At the end of this book there is a resources section with tons of links to the various services and API's available for
+you to build your sites and applications with.
+
+### Markup
+
+The last piece of the Jam is Markup. This ultimately ends up being HTML, but many Jamstack sites also make liberal use
+of Markdown. Markdown is a simple markup langauge that allows content writers and creators to write content without
+having to worry about HTML formatting, tags, etc. 
+
+A static site generator typically takes this markdown and converts it to html during the `build` process where a site is
+packaged up and prepared for deployment.

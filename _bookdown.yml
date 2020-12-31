@@ -8,6 +8,7 @@ new_session: yes
 rmd_files:
   [
     'index.Rmd',
+    'what_is_the_jamstack.Rmd',
     'projects.Rmd',
     'project_hugo_blog.Rmd',
     'project_eleventy_membership.Rmd',
