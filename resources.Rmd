@@ -1,0 +1,129 @@
+# Resources {-}
+
+- [Jamstack.org](https://jamstack.org/)
+
+- [Jamstack  WTF](https://jamstack.wtf/)
+
+- [The New Dynamic](https://www.tnd.dev/)
+
+## Static Site Generators
+
+- [Hugo](https://gohugo.io/)
+
+## CMS
+
+- [Netlify CMS](https://www.netlifycms.org/)
+
+## Jamstack Hosting
+
+- [Netlify](https://www.netlify.com/)
+
+- [Surge.sh](https://surge.sh/)
+
+- [Stackbit](https://www.stackbit.com/)
+
+## Chat & Messagingg
+
+- [Sendbird](https://sendbird.com/)
+
+## Scheduling
+
+- [Timekit](https://www.timekit.io/)
+
+## Images & Videos
+
+- [Cloudinary](https://cloudinary.com/)
+
+## Databases & Backends
+
+- [Fauna DB](https://fauna.com/)
+
+- [Redwood JS - Bringing full-stack to the Jamstack](https://redwoodjs.com/)
+
+- [Static Backend](https://staticbackend.com/)
+
+## Memberships & Subscriptions
+
+- [Memberstack](https://www.memberstack.com/)
+
+- [Userbase](https://userbase.com/)
+
+## Ecommerce
+
+- [Stripe](https://stripe.com/)
+
+- [Crystallize - Headless eCommerce](https://crystallize.com/)
+
+- [Use Shopping Cart](https://useshoppingcart.com/getting-started/)
+
+- [Jamstack Ecommerce Starter Project with Gatsby](https://github.com/jamstack-cms/jamstack-ecommerce)
+
+## Jamstack Themes
+
+- [Jamstack Themes](https://jamstackthemes.dev/)
+
+## Tutorials & Learning Resources
+
+### Blogs
+
+- [Benjamas - a Jamstack Agency](https://bejamas.io/blog/)
+
+- [Ikius](https://ikius.com/blog)
+
+### Repo's
+
+- [Awesome Jamstack Repo](https://github.com/automata/awesome-jamstack)
+
+## Books
+
+- Free: [Modern Web Development on the Jamstack](https://www.netlify.com/oreilly-jamstack/)
+
+- Free: [The Complete Beginner Guide to JAMstack](https://agilitycms71084.ac-page.com/ebook-jamstack-beginners-agility-and-ikius)
+
+- Paid: [Jamstack Handbook](https://jamstackhandbook.com/)
+
+### Articles
+
+- [Jamstack Explorers](https://explorers.netlify.com/)
+
+- [100 Jamstack Tools, APIs & Services to Power Your Sites](https://www.sitepoint.com/jamstack-tools-services-apis/)
+
+- [Useful APIs to know when building a JAMstack app](https://blog.logrocket.com/jamstack-app-apis/)
+
+- [Netlify - GoTrue JS - bringing authentication to static sites with just 3kb of
+JS](https://www.netlify.com/blog/2018/12/07/gotrue-js-bringing-authentication-to-static-sites-with-just-3kb-of-js/)
+
+- [Free Code Camp - How to Build Authenticated Serverless JAMstack Apps with Gatsby and
+Netlify](https://www.freecodecamp.org/news/building-jamstack-apps/)
+
+- [Netlify - Manage Subscriptions and Protect Content With
+Stripe](https://www.netlify.com/blog/2020/07/13/manage-subscriptions-and-protect-content-with-stripe/)
+
+- [Auth0 - Build a JAMstack App with Gatsby Cloud, DatoCMS, and
+Netlify](https://auth0.com/blog/build-a-jamstack-app-with-gatsby-cloud-datocms-and-netlify/)
+
+- [Auth0 - Securing Gatsby with Auth0](https://auth0.com/blog/securing-gatsby-with-auth0/)
+
+- [Gatsby E-commerce Tutorial](https://www.gatsbyjs.com/tutorial/ecommerce-tutorial/)
+
+- [Learn How to Accept Money on Jamstack Sites in 38
+Minutes](https://www.netlify.com/blog/2020/04/13/learn-how-to-accept-money-on-jamstack-sites-in-38-minutes/)
+
+- [How to Build a Jamstack Site with Next.js and
+Vercel](https://www.freecodecamp.org/news/how-to-build-a-jamstack-site-with-next-js-and-vercel-jamstack-handbook/)
+
+- [How To Migrate From WordPress To The Eleventy Static Site Generator](https://www.smashingmagazine.com/2020/12/wordpress-eleventy-static-site-generator/)
+
+### Courses
+
+- [Jamstack Training](https://jamstack.training/)
+
+### YouTube Videos
+
+- [Building an e-commerce site with Gatsby, Netlify, and
+Stripe](https://www.youtube.com/watch?v=EvZJFASPn08&feature=youtu.be)
+
+- [Learn With Jason - Sell Products on the JAMstack (with Thor 雷
+神)](https://www.youtube.com/watch?v=0fQPbiqG9bY&feature=youtu.be)
+
+- [Free Code Camp  - The Great Gatsby Bootcamp](https://www.youtube.com/watch?v=kzWIUX3CpuI&feature=youtu.be)
