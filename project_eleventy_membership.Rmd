@@ -64,13 +64,11 @@ On the next screen click on the "New Membership" button. This is where we will s
 4. Select "Monthly" for the billing frequency
 5. Free Trial, Setup Fee & Collect taxes can all be toggled off for now.
 
-Now click on the "Hide Content" button in the "Members-only content" section. In this section we are going to make sure that user who do not have access to either membership plan cannot access the content.
+Now click on the "Hide Content" button in the "Members-only content" section. In this section we are going to make sure that users who do not have access to either membership plan cannot access the content.
 
 1. Enter "Basic Plan" for the content name.
-2. Enter `basic` for the "Hide pages & folders" field. This will hide all of the basic plan content from users who do
-   not have a basic plan.
-3. Enter `login` for the "Access denied page." This will redirect users who try access the basic account page who are
-   not logged in or who are not paying subscribers.
+2. Enter `basic` for the "Hide pages & folders" field. This will hide all of the basic plan content from users who do not have a basic plan.
+3. Enter `login` for the "Access denied page." This will redirect users who try access the basic account page who are not logged in or who are not paying subscribers.
 4. Click the "Create" button at the bottom.
 
 ![Memberstack Basic Page Hide Content](images/eleventy-membership/memberstack_basic_page_hide_content.png)
@@ -99,7 +97,7 @@ Click on the "New Membership" button.
 4. Select "Yearly" for the billing frequency
 5. Free Trial, Setup Fee & Collect taxes can all be toggled off for now.
 
-Now click on the "Hide Content" button in the "Members-only content" section. In this section we are going to make sure that user who do not have access to either membership plan cannot access the content.
+Now click on the "Hide Content" button in the "Members-only content" section. In this section we are going to make sure that users who do not have access to either membership plan cannot access the content.
 
 1. Enter "Premium Plan" for the content name.
 2. Enter `premium` for the "Hide pages & folders" field. This will hide all of the premium plan content from users who do not have a premium plan.
@@ -116,7 +114,7 @@ For the "Page after signup" & "Page after login" enter `premium/account/`
 
 ![Memberstack Premium Page After Signup](images/eleventy-membership/memberstack_premium_page_after_signup.png)
 
-This tells memberstack to redirect the user who has a "premium plan" membership to the premium account page after signing up and each time they login.
+This tells memberstack to redirect the users who have a "premium plan" membership to the premium account page after signing up and after logging in.
 
 Then click the "Create Membership" button.
 
@@ -128,7 +126,7 @@ Your Membership dashboard should now look like this.
 
 Now that we have both of memberships setup and configured, we need to integrate them on our site so that our users can signup for them.
 
-Underneath the "Membership Plans" section of our dashboard are our two membership plans. To the right of those are buttons called "Signup link" this is the code snippet we need to link our memberships on our site to Memberstack. Click on the "Signup link" for the Basic plan first.
+Underneath the "Membership Plans" section of our dashboard are both membership plans. To the right of those are buttons called "Signup link" this is the code snippet we need to link our memberships on our site to Memberstack. Click on the "Signup link" for the Basic plan first.
 
 ![Memberstack Basic Signup Link](images/eleventy-membership/memberstack_basic_signup_link.png)
 
@@ -138,7 +136,7 @@ Then head back over to our site's code and open the `index.html` file and scroll
 
 ```html
 <a
-  data-ms-membership="5fd8ca138868e80004829790"
+  data-ms-membership="5fd8ca13..."
   href="signup"
   class="button full-button w-inline-block"
 >
@@ -154,7 +152,7 @@ Add the data attribute to our premium link around line `247`
 
 ```html
 <a
-  data-ms-membership="5fd8cfb14b5ead000426cdfe"
+  data-ms-membership="5fd8cfb1..."
   href="signup"
   class="button full-button secondary-button w-inline-block"
 >
@@ -177,13 +175,13 @@ Copy the code snippet in there and then open add the snippet just above the clos
   rel="shortcut icon" type="image/x-icon">
 
   <link
-    href="/assets/images/Freebie-Webclip.png"
+    href="images/images/Freebie-Webclip.png"
     rel="apple-touch-icon">
 
   <!-- Memberstack -->
   <script
     src="https://api.memberstack.io/static/memberstack.js?custom"
-    data-memberstack-id="751ee1afe565f84062a614b9a5d554a3">
+    data-memberstack-id="751ee1...">
   </script>
 </head>
 ```
@@ -388,7 +386,7 @@ The entire `account.html` file should look like this.
   class="navbar w-nav"
 >
   <a href="/" class="brand w-nav-brand">
-    <img src="/assets/images/heart.svg" alt="" />
+    <img src="images/images/heart.svg" alt="" />
   </a>
 
   <nav role="navigation" class="homepage-nav-menu w-nav-menu">
@@ -460,6 +458,10 @@ Click the "Connect my Stripe account" button.
 You should then be redirected back to Memberstack and see the following:
 
 ![Memberstrack Stripe Successfully Connected](images/eleventy-membership/memberstack_stripe_successfully_connected.png)
+
+## GitHub Repo
+The completed project can be found here inside of `Eleventy-Membership/final` 
+[GitHub Repo](https://github.com/robertguss/howtocode-understanding-the-jamstack)
 
 ## Wrap up
 
