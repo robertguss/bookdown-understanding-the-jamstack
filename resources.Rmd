@@ -1,5 +1,7 @@
 # Resources {-}
 
+![Jamstack Ecosystem - Benjamas - https://bejamas.io/blog/jamstack-ecosystem/](images/jamstack-landscape.png)
+
 - [Jamstack.org](https://jamstack.org/)
 
 - [Jamstack  WTF](https://jamstack.wtf/)
@@ -8,19 +10,35 @@
 
 ## Static Site Generators
 
-- [Hugo](https://gohugo.io/)
+- [Jamstack.org - Site Generators](https://jamstack.org/generators/)
+
+### Articles
+
+- [Beginner’s Guide to Static Site Generators](https://bejamas.io/blog/static-site-generators/)
 
 ## CMS
 
-- [Netlify CMS](https://www.netlifycms.org/)
+- [Jamstack.org - Headless CMS](https://jamstack.org/headless-cms/)
+
+### Articles
+
+- [10 Headless CMS Options for your Jamstack Website](https://bejamas.io/blog/headless-cms/)
 
 ## Jamstack Hosting
 
 - [Netlify](https://www.netlify.com/)
 
+- [Vercel](https://vercel.com/)
+
 - [Surge.sh](https://surge.sh/)
 
+- [AWS Amplify](https://aws.amazon.com/amplify/)
+
+## Jamstack Platforms & Site Builders
+
 - [Stackbit](https://www.stackbit.com/)
+
+- [Reflex JS](https://reflexjs.org/)
 
 ## Chat & Messagingg
 
@@ -38,9 +56,17 @@
 
 - [Fauna DB](https://fauna.com/)
 
-- [Redwood JS - Bringing full-stack to the Jamstack](https://redwoodjs.com/)
+- [Redwood JS](https://redwoodjs.com/)
+
+- [Prisma](https://www.prisma.io/)
+
+- [Hasura](https://hasura.io/)
 
 - [Static Backend](https://staticbackend.com/)
+
+- [Sheetsu](https://sheetsu.com/)
+
+- [Airtable](https://airtable.com/)
 
 ## Memberships & Subscriptions
 
@@ -52,7 +78,13 @@
 
 - [Stripe](https://stripe.com/)
 
-- [Crystallize - Headless eCommerce](https://crystallize.com/)
+- [Snipcart](https://snipcart.com/)
+
+- [Crystallize](https://crystallize.com/)
+
+- [Shopify](https://www.shopify.com/)
+
+- [Commerce JS](https://commercejs.com/)
 
 - [Use Shopping Cart](https://useshoppingcart.com/getting-started/)
 
