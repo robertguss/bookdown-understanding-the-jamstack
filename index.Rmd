@@ -22,8 +22,10 @@ cover-image: images/cover.png
 
 I wrote "Understanding the Jamstack" in order to help developers get a better understanding of the Jamstack
 architecture/philosophy and its ecosystem. There are lots of tutorials, blog posts, articles, YouTube videos, etc. that
-provide information about the Jamstack, but I have yet to find a single resource that attempts to explain it all. This
-book is my attempt at being that single resource.
+provide information about the Jamstack, but I have yet to find a comprehensive resource that attempts to explain it all
+while also providing valuable projects so that you can learn first hand how to build with this architecture.
+
+This book is my attempt at being that resource.
 
 Not only will you learn what the Jamstack is, but you will also build a few projects to help you gain a better
 understanding of what is possible with this architecture. You will also learn and be exposed to lots of various tools,

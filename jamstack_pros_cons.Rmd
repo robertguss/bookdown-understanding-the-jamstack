@@ -1,0 +1,33 @@
+# Jamstack Pros & Cons
+
+Software development is all about trade offs. The Jamstack is by no means a perfect solution that fits every
+applications need, it is simply a solution. The reason why this book was written is to help you better understand when
+the Jamstack makes sense and when it does not. We are all guilty of wanting to try out the latest and greatest tech at
+every opportunity we can, but it would be wise of us to slow down, take a step back, and really take into consideration
+the trade offs of using a technology.
+
+While the Jamstackc is not a "technology" per se, it definitely has trade offs. For some applications it makes a lot of
+sense to adopt  this architecture, and for others not so much. In this chapter we will explore some of the pros and cons
+of the Jamstack.
+
+## Pros
+
+- performance, security, reliability, and cost
+- developer happiness
+- no need for dev ops
+- allows front-end devs to build robust applications without need backend or dev ops experience
+- automatic ci/cd pipelines from jamstack hosting providers
+- Jamstack vs monolith's like WordPress
+
+### Performance
+
+Performance is probably one of the greatest benefits to adopting the Jamstack. We all love speed. Developers always want
+things to be as fast as possible, but userss nowadays do as well. 
+
+## Cons
+
+- Jamstack build times can be quite long for larger sites
+- Steeper learning curve and more up front time cost - this pays off in the long run however.
+- Content previewing and changes are not instant like traditional cms backed sites
+- you do not control 3rd party api's or their downtime
+- Jamstack vs monolith's like WordPress

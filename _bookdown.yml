@@ -9,6 +9,7 @@ rmd_files:
   [
     'index.Rmd',
     'what_is_the_jamstack.Rmd',
+    'jamstack_pros_cons.Rmd',
     'projects.Rmd',
     'project_hugo_blog.Rmd',
     'project_eleventy_membership.Rmd',
