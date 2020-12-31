@@ -5,12 +5,14 @@ bookdown::bs4_book:
   repo: https://github.com/robertguss/howtocode-understanding-the-jamstack
   includes:
     in_header: [header.html]
+    after_body: [footer.html]
 
 # Gitbook
 bookdown::gitbook:
   # css: style.css
   includes:
     in_header: [header.html]
+    after_body: [footer.html]
   config:
     toc:
       before: |

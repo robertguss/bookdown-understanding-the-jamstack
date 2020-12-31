@@ -22,9 +22,7 @@ We are going to be using a pre-configured theme for Hugo called [Ink](https://th
 download the theme from Github [here](https://github.com/knadh/hugo-ink). Click on the Green button called "Code"
 and then "Download Zip."
 
-```{r echo = FALSE, out.width = "100%"}
-knitr::include_graphics("images/jamstack-hugo-blog/ink_github_download.png")
-```
+![Ink GitHub Download](images/jamstack-hugo-blog/ink_github_download.png)
 
 When you download the zip file and unzip it, it will most likely be called `hugo-ink-master` simply rename the folder to `ink` and then move it inside of the `themes` folder.
 
