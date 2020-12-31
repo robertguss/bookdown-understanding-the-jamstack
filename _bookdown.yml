@@ -5,4 +5,10 @@ new_session: yes
 #   ui:
 #     chapter_name: 'Chapter '
 
-rmd_files: ['index.Rmd', 'projects.Rmd', 'project_hugo_blog.Rmd']
+rmd_files:
+  [
+    'index.Rmd',
+    'projects.Rmd',
+    'project_hugo_blog.Rmd',
+    'project_eleventy_membership.Rmd',
+  ]
