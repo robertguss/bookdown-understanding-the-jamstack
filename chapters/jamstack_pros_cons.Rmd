@@ -12,22 +12,124 @@ of the Jamstack.
 
 ## Pros
 
-- performance, security, reliability, and cost
-- developer happiness
-- no need for dev ops
-- allows front-end devs to build robust applications without need backend or dev ops experience
-- automatic ci/cd pipelines from jamstack hosting providers
-- Jamstack vs monolith's like WordPress
-
 ### Performance
 
+![Performance impact at scale](images/performance-quotes.png)
+
 Performance is probably one of the greatest benefits to adopting the Jamstack. We all love speed. Developers always want
-things to be as fast as possible, but userss nowadays do as well. 
+things to be as fast as possible, but userss nowadays do as well. Performance is also a key metric for ranking in search
+results. The impact of slow loading times can also have [significant impact on your bottom
+line](https://medium.com/@vikigreen/impact-of-slow-page-load-time-on-website-performance-40d5c9ce568a).
+
+![Performance infographic](images/performance-infographic.jpg)
+
+Most Jamstack sites are delpoyed to a CDN or Content Delivery Network which ensures that your site or application is
+served to your users from the shortest distant possible which makes load times blazing fast.
+
+![CDN (Content Delivery Network - source: https://imagekit.io/blog/what-is-content-delivery-network-cdn-guide/)](images/cdn.jpg)
+
+### Security
+
+Let's face it, no one wants to get hacked. All to often these days we hear horror stories of some company's system being
+compromised which results in millions of peoples personal information being exposed. Granted, most of us do not operate
+at such scale, however the threat is very real to all of us. Security should be of the utmost importance when building
+applications.
+
+Since the Jamstack is comprised of pre-rendered static files that are  `read-only`, we no longer have to worry about bad
+actors compromising our sytems. However, the services and API's we integrate into our Jamstack applications can still be
+compromised. Having smaller systems and services though, reduces the surface area exposed to potential threats.
+
+> Checkout this article on [WordPress hacking statistics in 2020](webarxsecurity.com/website-hacking-statistics-2018-february/)
+
+### Reliability
+
+Users expect our applications to work 100% of the time and are rightfully very disgruntled when they do not. Minimizing
+the amount of down time, is essential to the success of any application or business. Like I mentioned before, having an
+application where the majority of it is pre-rendered, provides incredible reliability.
+
+### Cost
+
+Due to the advance of cloud infrastructure, hosting applications has never been cheaper. Hosting a collection of static
+files is arguably the cheapest solution out there. Not to mention the fact that most hosting services that specialize in
+the Jamstack offer CI/CD as part of their solution. This means you do not need a large dev ops, site reliablity or
+infrastructure team to maintain your infrastructure. A developer simply makes a push to a version control repo, usually
+GitHub, GitLab or Bitbucket and the CI/CD pipelines will automatically build the latest changes, push them to production
+and invalidate the cache automatically.
+
+### Small Teams
+
+The Jamstack allows small teams, even a single developer to build out large and powerful applications with a minimal
+amount of knowledge and effort. For example, a font-end developer is able to deploy a complete ecommerce solution without
+having to worry about user login/authentication, ecommerce, accepting payments, checkout, etc. They can leverage 3rd
+party tools and services that specialize in these areas, allowing them to focus on the areas they are most comfortable
+with, the UI and UX.
+
+This aspect is incredibly powerful. With the increasing number of these 3rd party API's and services it becomes
+significantly easier for small teams or a single dev to build out impressive applications in short periods of time. Not
+to mention startups and entrepreneurs looking to prototype or build an mvp to validate their ideas.
+
+### Developer Happiness
+
+This is an often overlooked aspect when building an application. The Jamstack is a rich ecosystem with a wide variety of
+tools and services. This means that developers have an incredible amount of options to choose from when building
+Jamstack applications. This kind of diversity enables devs to use the tools they know and love and to build applications
+the way in which they find most exciting, not only for themselves, but also for the business of course. The more diverse the web is, the most options we as developers have, the better the web is for everyone.
 
 ## Cons
 
-- Jamstack build times can be quite long for larger sites
-- Steeper learning curve and more up front time cost - this pays off in the long run however.
-- Content previewing and changes are not instant like traditional cms backed sites
-- you do not control 3rd party api's or their downtime
-- Jamstack vs monolith's like WordPress
+Now that we have sung the praises of the Jamstack, let's also take a look at some of the drawbacks of this architecture.
+Afterall, software development is all about tradeoffs and the Jamstack is no exception.
+
+### Long build times
+
+Since all of the content is pre-rendered, the larger a site becomes, the longer this compile/build time takes. For small
+sites with only a few dozen pages or so, the compile time is negligible. However, as your site increases these build
+times also increase. Imagine you are a large news organization where you have several journalists posting articles all
+the time. If you have several thousands articles or pages, these slow compile times can become a serious issue. 
+
+Fortunately, many of the popular static site generators are building features that allow partial builds, which will only
+rebuild pages of your site that have actually changed rather than building the entire thing from scratch every time.
+
+### Up front costs - steep learning curve
+
+The Jamstack ecosytem is quite diverse with lots of tools and technologies available. It can be a little overwhelming at
+first to learn some of these tools and services. This aspect was the main motivating factor for writing this book. It
+can be a little daunting to learn this 'new' way of building sites and applications, which you will initially pay for up
+front. At first you or your team may be a little slow, but as time goes on speed will increase and will pay
+dividends going forward. If you are ok with a slower ramp up time, the investment will typically pay off in the long
+run.
+
+### Premature de-coupling
+
+The Jamstack architecture is by nature one compromised of smaller services. While this provides many benefits, it also
+can be problematic. Typically a large monolithic application is split up into smaller services, or micro services, to
+help alleviate the pains of working with it. A Jamstack application starts out de-coupled from the very beginning which
+can introduce unncessary complexity from the start. 
+
+Depending upon your needs and app, it may be best to start out building a monolithic application at first, and then
+break it up or adopt the Jamstack after the fact. This is something you and your team will need to consider, there is no
+one size fits all solution.
+
+### Content previewing
+
+In a tradional CMS like WordPress, Drupal, Craft, etc previewing a 'draft' page is trivial with just the click of a
+button as the CMS is rendering the content for you. This feature does not exist in Jamstack sites since the content is
+already pre-rendered. 
+
+This is a known issue and the Jamstack community is working hard to solve it. Many headless CMS's and hosting providers
+are working to provide a working solution. [Gatsby Cloud](https://www.gatsbyjs.com/features/cms/) for instance offers
+previwing and incremental builds.
+
+### Third party services & API's
+
+It may seem paradoxical to have third party services and API's as a con, as this is an important aspect of the Jamstack
+architecture. The reason why they can be a con, is due to the fact that you do not control these services. You do not
+know when these services will be down, which could suddenly have a dramatic impact on your users, applications and
+bottom line. Again, this is a trade off you are willing to accept when you adopt these third party tools. 
+
+You also do not know the longevity of the businesses behind these services. What happens if they go under, or are bought
+out by another investor or company?
+
+The good news, however, is that since your application is split into smaller pieces, these services are easier to swap
+out and replace with either another third party service or one you create yourself. The de-coupled nature of the
+architecture allows you to easily swap out these services as needed.

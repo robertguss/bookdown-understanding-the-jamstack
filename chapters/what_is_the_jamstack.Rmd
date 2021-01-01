@@ -1,6 +1,6 @@
 # What is the Jamstack?
 
-There has been an increasing trend over the last several years to break up traditional "monolithic" applications and
+There has been an [increasing trend](https://almanac.httparchive.org/en/2020/jamstack) over the last several years to break up traditional "monolithic" applications and
 architectures into smaller more maintainable pieces & services. The Jamstack is a continuation of that trend.  The
 Jamstack is fundamentally an architecture, a way of designing websites and applications. It is also a philosophy on how
 to build modern sites and applications.
