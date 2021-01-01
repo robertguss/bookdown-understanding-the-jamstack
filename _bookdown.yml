@@ -9,7 +9,7 @@ rmd_files:
   [
     'index.Rmd',
     'chapters/what_is_the_jamstack.Rmd',
-    'chapters/jamstack_pros_cons.Rmd',
+    'chapters/pros_cons.Rmd',
     'chapters/projects.Rmd',
     'chapters/project_hugo_blog.Rmd',
     'chapters/project_eleventy_membership.Rmd',

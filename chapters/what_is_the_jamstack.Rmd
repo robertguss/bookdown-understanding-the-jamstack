@@ -1,9 +1,9 @@
 # What is the Jamstack?
 
-There has been an [increasing trend](https://almanac.httparchive.org/en/2020/jamstack) over the last several years to break up traditional "monolithic" applications and
-architectures into smaller more maintainable pieces & services. The Jamstack is a continuation of that trend.  The
-Jamstack is fundamentally an architecture, a way of designing websites and applications. It is also a philosophy on how
-to build modern sites and applications.
+There has been an [increasing trend](https://almanac.httparchive.org/en/2020/jamstack) over the last several years to
+break up traditional "monolithic" applications and architectures into smaller more maintainable pieces & services. The
+Jamstack is a continuation of that trend.  The Jamstack is fundamentally an architecture, a way of designing websites
+and applications. It is also a philosophy on how to build modern sites and applications.
 
 It primarily centers around two very important concepts: [pre-rendering](https://jamstack.org/glossary/pre-render/) and
 [de-coupling](https://jamstack.org/glossary/decoupling/). An important tool in the Jamstack architecture is the Static
@@ -52,3 +52,51 @@ having to worry about HTML formatting, tags, etc.
 
 A static site generator typically takes this markdown and converts it to html during the `build` process where a site is
 packaged up and prepared for deployment.
+
+## Tools & services
+
+While every Jamstack architecture is unique, there are a common set of tools and services you will often find among them.
+
+### Static site generator
+
+A [static site generator](https://jamstack.org/generators/) is a tool that takes your site and builds it into static
+files, which you then deploy to production, usually a CDN. Often these tools take `.md` or markdown files, and convert
+them to `.html` pages. These tools are also responsible for compiling JS, CSS, PostCSS, images, fonts, etc into their
+production ready form.
+
+### CDN - content delivery network
+
+![CDN (Content Delivery Network - source: https://imagekit.io/blog/what-is-content-delivery-network-cdn-guide/)](images/cdn.jpg)
+
+A CDN or content delivery network takes your site and deploys it to servers all around the world. This allows your
+users, no matter where they are in the world, to quickly download your site to a location nearest to them. 
+
+For example, let's say you live in the US and your site is deployed to a server in New York. When a user from Australia
+tries to access it, that request has to travel all the way from Australia to New York and back again before anything is
+rendered on the page. Whereas, with a CDN, your site will be deployed to a server in Australia and so the distance that
+request has to travel is significantly shorter.
+
+### Headless CMS
+
+With a more tradional 'monolithic' CMS, the CMS itself is responsible for rendering the templates/views to the user
+dynamically when they request them. Since a Jamstack site is pre-rendered, this is not possible. A [headless
+CMS](https://jamstack.org/headless-cms/) therefore is responsible solely for managing content, not the presentation or
+view layer. They typically expose the content via a REST API or GraphQL API which a static site generator then extracts
+the content needed during the build/compile step. Once the SSG has all of the content, it injects it into the templates
+and outputs `.html` files.
+
+### Continuous Integration & Deployment
+
+Another important aspect of the Jamstack architecture is CI/CD. What this allows is for a developer or content creator
+to automatically create a new build and deploy to production with the simple click of a button, or via a merge into
+`master` in a repo.
+
+Most headless CMS's will trigger a webhook when a content author saves a change which will then trigger the CI/CD
+pipelines on the hosting provider which will then build and deploy the latest changes. Most hosting providers are also
+configured to trigger a new build & deploy when a new commit is merged into `master`.
+
+### Version control
+
+A Jamstack site can be stored entirely in a repo under version control, usually Git. This allows a developer to easily
+`clone` it and get the entire site or application up and running locally within minutes. No longer will you have to
+worry about cloning a database or setting up/configuring complex local dev environments.

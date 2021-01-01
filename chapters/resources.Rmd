@@ -8,6 +8,10 @@
 
 - [The New Dynamic](https://www.tnd.dev/)
 
+## Case studies
+
+- [How Smashing Magazine Manages Content: Migration From WordPress To JAMstack](https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/)
+
 ## Static Site Generators
 
 - [Jamstack.org - Site Generators](https://jamstack.org/generators/)
