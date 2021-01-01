@@ -59,6 +59,8 @@ While every Jamstack architecture is unique, there are a common set of tools and
 
 ### Static site generator
 
+![Static Site Generator - source:https://bejamas.io/blog/static-site-generators/](images/ssg.png)
+
 A [static site generator](https://jamstack.org/generators/) is a tool that takes your site and builds it into static
 files, which you then deploy to production, usually a CDN. Often these tools take `.md` or markdown files, and convert
 them to `.html` pages. These tools are also responsible for compiling JS, CSS, PostCSS, images, fonts, etc into their
@@ -78,6 +80,8 @@ request has to travel is significantly shorter.
 
 ### Headless CMS
 
+![Headless CMS - source: https://bejamas.io/blog/headless-cms/](images/headless-cms.png)
+
 With a more tradional 'monolithic' CMS, the CMS itself is responsible for rendering the templates/views to the user
 dynamically when they request them. Since a Jamstack site is pre-rendered, this is not possible. A [headless
 CMS](https://jamstack.org/headless-cms/) therefore is responsible solely for managing content, not the presentation or
@@ -86,6 +90,8 @@ the content needed during the build/compile step. Once the SSG has all of the co
 and outputs `.html` files.
 
 ### Continuous Integration & Deployment
+
+![CI/CD - source: https://solidstudio.io/blog/ci-cd-pipelines.html](images/ci-cd.png)
 
 Another important aspect of the Jamstack architecture is CI/CD. What this allows is for a developer or content creator
 to automatically create a new build and deploy to production with the simple click of a button, or via a merge into
@@ -96,6 +102,8 @@ pipelines on the hosting provider which will then build and deploy the latest ch
 configured to trigger a new build & deploy when a new commit is merged into `master`.
 
 ### Version control
+
+![Git - source: https://www.nobledesktop.com/learn/git/git-branches](images/git.png)
 
 A Jamstack site can be stored entirely in a repo under version control, usually Git. This allows a developer to easily
 `clone` it and get the entire site or application up and running locally within minutes. No longer will you have to
