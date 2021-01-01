@@ -32,16 +32,16 @@ understanding of what is possible with this architecture. You will also learn an
 technologies and services in the ecosystem. 
 
 Each project intentionally uses different tooling so as to give you as much experience with as many tools as possible.
-However, this means that I am not able to go into great detail about each tool and service. My intention is to give you
-enough information and experience to help you find what you like and where you can go to learn more.
+However, this means that I am unable to go into great depth about each tool and service used througout the book. At the
+very end of the book is a resources chapter that contains tons of links to articles, videos, services and tools which
+you can explore to learn more.
 
-This book is not intended for beginners. I assume you have at least an basic to intermediate level of understanding of HTML, CSS and JavaScript. 
+This book is not intended for beginners. I assume you have at least a intermediate level of understanding of HTML, CSS and JavaScript. 
 
 Finally, I would like to personally thank you for taking the time to read this book as I have put in many hours creating
 it. It has been a labor of love and a passion of mine. I hope it will serve you well.
 
-I would love to hear any feedback, corrections, criticism, etc. You can find me on Twitter
-[here](https://twitter.com/_howtocode_). You can reach me via email at <a href="mailto:howtocode@pm.me">howtocode@pm.me</a>
+I would love to hear any feedback, corrections, criticism, etc. You can find me on [Twitter](https://twitter.com/_howtocode_). You can reach me via email at <a href="mailto:howtocode@pm.me">howtocode@pm.me</a>
 
 Cheers,
 Robert Guss
