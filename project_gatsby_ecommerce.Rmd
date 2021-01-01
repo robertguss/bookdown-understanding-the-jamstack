@@ -1,16 +1,16 @@
 # Ecommerce with Gatsby & Stripe Checkout
 
-In this project we are going to be creating a simple e-commerce web site with Gatbsy and Stripe checkout. Stripe checkout is client-side checkout that allows us to integrate a complete checkout experience without a backend.
+In this project, we will be creating a simple e-commerce web site with Gatbsy and Stripe checkout. Stripe checkout is client-side checkout that allows us to integrate a complete checkout experience without a backend.
 
 ## Installing Gatsby
 
-First you will need to download and install [Gatsby](https://www.gatsbyjs.com)
+First, you will need to download and install [Gatsby](https://www.gatsbyjs.com)
 
 ```bash
 npm i -g gatsby-cli
 ```
 
-With the cli installed, create a new project.
+With the CLI installed, create a new project.
 
 ```bash
 gatsby new stripe-checkout
@@ -23,21 +23,21 @@ Open up the project and run the development server.
 gatsby develop
 ```
 
-One the server is up and running you should be able to preview the site at `http://localhost:8000/`.
+Once the server is up and running, you should be able to preview the site at `http://localhost:8000/`.
 
 ![Gatsby Default Starter](images/gatsby-ecommerce/gatsby_default_starter.png)
 
 ## Installing & Configuring Stripe
 
-You will need to create a [Stripe](https://stripe.com/) account if you don't already have one. You can sign up for a free account as it will provide all that we need for our project.
+You will need to create a [Stripe](https://stripe.com/) account if you don't already have one. You can sign up for a free account to provide all that we need for our project.
 
-Once you have your Stripe account setup, head back over to your terminal to install the Stripe NPM packages.
+Once you have your Stripe account set up, head back over to your terminal to install the Stripe NPM packages.
 
 ```bash
 npm install @stripe/stripe-js gatsby-source-stripe
 ```
 
-With both of these packages installed, we now need to add the `gatsby-sourcce-stripe` plugin to our `gatsby-config.js` file. Add the following to the config.
+With both of these packages installed, we now need to add the `gatsby-source-stripe` plugin to our `gatsby-config.js` file. Add the following to the config.
 
 ```js
 {
@@ -49,7 +49,7 @@ options: {
 },
 ```
 
-You will notice that there is a key called `secretKey` which we need to populate with our secret key from stripe. We will configure this next.
+You will notice a key called `secretKey` that we need to populate with Stripe's secret key. We will configure this next.
 
 The entire file should look like this.
 
@@ -95,13 +95,13 @@ module.exports = {
 };
 ```
 
-Head back over to the Stripe dashboard and click on "Developers" and then "API keys" on the left hand side.
+Head back over to the Stripe dashboard and click on "Developers" and then "API keys" on the left-hand side.
 
-![Stripe developer api keys sidebar](images/gatsby-ecommerce/stripe_developer_api_keys_sidebar.png)
+![Stripe developer API keys sidebar](images/gatsby-ecommerce/stripe_developer_api_keys_sidebar.png)
 
 _**make sure to toggle on the "Viewing test data" as well.**_
 
-In the "Standard keys" section you should see the following.
+In the "Standard keys" section, you should see the following.
 
 ![Stripe Standard Keys](images/gatsby-ecommerce/stripe_standard_keys.png)
 
@@ -109,35 +109,34 @@ Click the "Reveal live key" to show your secret key and then copy it.
 
 ### Creating .env variables
 
-We obviously do not want to simply paste our secret key into our gatsby config, because then it would be exposed to the outside world. This is a huge security risk! So in order for us to protect our keys, we are going to create a `.env` file. This will allow us to use our keys without exposing them to the public.
+We do not want to paste our secret key into our gatsby config because it would expose it to the outside world. This is a huge security risk! To protect our keys, we will create a `.env` file, which allows us to use our keys without exposing them to the public.
 
-In the root of our gatsby project create two files called `.env.development` & `.env.production`
+In the root of our gatsby project, create two files called `.env.development` & `.env.production`
 
 ```bash
 touch .env.development
 touch .env.production
 ```
 
-Within both files add both your `Publishable` and `Secret` keys like so:
+Within both files, add both your `Publishable` and `Secret` keys like so:
 
 ```bash
 GATSBY_STRIPE_SECRET=sk_test_FOlN...
 GATSBY_STRIPE_PUBLISHABLE=pk_test_ibqK...
 ```
 
-the `GATSBY` prefix is important because we need these variables exposed to the client. You can read more about this [here](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/#example-of-using-an-environment-variable)
+The `GATSBY` prefix is important because we need these variables exposed to the client. You can read more about this [here](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/#example-of-using-an-environment-variable)
 
-`.env.production` will contain the keys we need for production, for the sake of
-this example our keys will be the same, but in a real world project they would be different. We also need to specify different variables for different environments for when we build our project to deploy on Vercel.
+`.env.production` will contain the keys we need for production; for the sake of this example, our keys will be the same, but in a real-world project, they would be different.
 
-Now let's add this file to `.gitignore` so we will not accidentally check it into our version control.
+Now let's add this file to `.gitignore`.
 
 ```bash
 # dotenv environment variable files
 .env*
 ```
 
-_**This may already exist from when we first created our project, but double check just in case.**_
+_**This may already exist from when we first created our project, but double-check just in case.**_
 
 Now we need to use these env variables in our Gatsby config.
 
@@ -152,7 +151,7 @@ Now we need to use these env variables in our Gatsby config.
 },
 ```
 
-We also need to include our `.env.development` file in our config so that we have access to the variables. Add the following snippet to the top of the `gatsby-config.js` file just above the `module.exports = {`
+We also need to include our `.env.development` file in our config to have access to the variables. Add the following snippet to the top of the `gatsby-config.js` file just above the `module.exports = {`
 
 ```js
 require("dotenv").config({
@@ -164,7 +163,7 @@ module.exports = {
 
 ### Stripe Checkout
 
-Now let's setup and configure Stripe checkout. Head over to `https://dashboard.stripe.com/settings/checkout`. Under the
+Now let's set up and configure Stripe checkout. Head over to `https://dashboard.stripe.com/settings/checkout`. Under the
 "Next steps" section, click the "Enable client-only integration" button.
 
 ![Stripe enable clienttt only integration](images/gatsby-ecommerce/stripe_enable_client_only_integration.png)
@@ -177,23 +176,23 @@ You should now see some additional fields in the "Next steps" section.
 
 ![Stripe client-only fields](images/gatsby-ecommerce/stripe_client_only_fields.png)
 
-Next we need to create some products in Stripe to sell on our site. Click on the "Create your first product" link.
+Next, we need to create some products in Stripe to sell on our site. Click on the "Create your first product" link.
 
 ![Stripe create your first product link](images/gatsby-ecommerce/stripe_create_your_first_product_link.png)
 
-On the next screen click on the "Add Product" button to add our first product.
+On the next screen, click on the "Add Product" button to add our first product.
 
-For this example store we are going to be selling t-shirts for developers. So let's find some images of dev t-shirt's that we can sell. You are free to use whatever images or products you would like. I am going to use some images I found from [Redbubble](https://www.redbubble.com/shop/dev+t-shirts)
+For this example store, we are going to be selling t-shirts for developers. So let's find some images of dev t-shirt's that we can sell. You are free to use whatever images or products you would like. I am going to use some photos I found from [Redbubble](https://www.redbubble.com/shop/dev+t-shirts)
 
-Enter a name for the product, upload the image, set the price and check the "one-time" button.
+Enter a name for the product, upload the image, set the price, and check the "one-time" button.
 
-_**Make sure to add a few products at least, just so we have some actual products to populate our store page with.**_
+_**Make sure to add a few products so that we have some actual products to populate our store page with.**_
 
 ![Stripe product information](images/gatsby-ecommerce/stripe_product_information.png)
 
-## Adding stripe as a utility function
+## Adding Stripe as a utility function
 
-Per Gatsby's [docs](https://www.gatsbyjs.com/tutorial/ecommerce-tutorial/#extract-loading-of-stripejs-into-a-utility-function) they recommend that we wrap `Stripe.js` into a utility function so that we can use it across multiple pages.
+Per Gatsby's [docs](https://www.gatsbyjs.com/tutorial/ecommerce-tutorial/#extract-loading-of-stripejs-into-a-utility-function), they recommend that we wrap `Stripe.js` into a utility function so that we can use it across multiple pages.
 
 Create a new file in `src/utils/stripejs.js` and add the following.
 
@@ -215,7 +214,7 @@ export default getStripe;
 
 ## Adding a shopping cart
 
-We are going to be installing a shopping cart package that will allow our customers to add t-shirts to their cart, as this does not come out of the box with Stripe checkout. Otherwise customers will only be able to buy a single product at a time.
+We will be installing a shopping cart package that will allow our customers to add t-shirts to their cart, as this does not come out of the box with Stripe checkout. Otherwise, customers will only be able to buy a single product at a time.
 
 We will be installing [Use-Shopping-Cart](https://useshoppingcart.com/getting-started#installation)
 
@@ -231,7 +230,7 @@ Now that we have some products uploaded to Stripe, and your shopping cart instal
 
 ### Index Page
 
-Withing `/pages/index.js` add the following.
+Withing `/pages/index.js`, add the following.
 
 ```js
 import React from 'react';
@@ -272,7 +271,7 @@ export default CartExample;
 
 ### Products Component
 
-Create a new folder called `Products` inside of the `src/components folder` and create a file called `Products.js`.
+Create a new folder called `Products` inside the `src/components folder` and create a file called `Products.js`.
 
 ```js
 // src/components/Products/Products.js
@@ -453,15 +452,15 @@ Our site should now look like this.
 
 ![Gatsby store home page](images/gatsby-ecommerce/gatsby_store_home_page.png)
 
-Add a couple of products to the cart and then click "Checkout"
+Add a couple of products to the cart and then click "Checkout."
 
-If everything goes well you should be presented with the Stripe checkout.
+If everything goes well, you will see Stripe checkout.
 
 ![Stripe checkout page](images/gatsby-ecommerce/stripe_checkout_page.png)
 
-Fill out the details and use the special Stripe credit card `4242 4242 4242 4242`. For the expiration date choose any date that is in the future and use any 3 digit number for the security code.
+Fill out the details and use the special Stripe credit card `4242 4242 4242 4242`. For the expiration date, choose any date in the future and use any three-digit number for the security code.
 
-Now if you open up your Stripe dashboard and click on "Payments" in the left sidebar you should see the purchase you just made.
+Now, if you open up your Stripe dashboard and click on "Payments" in the left sidebar, you should see the purchase you just made.
 
 _**remember to make sure the "Viewing test data" is toggled on in the left sidebar**_
 
@@ -469,35 +468,35 @@ _**remember to make sure the "Viewing test data" is toggled on in the left sideb
 
 ## Deploying to Vercel
 
-We are going to be deploying our site to [Vercel](https://vercel.com/dashboard) another very popular hosting provider for Jamstack sites. Head over there and sign up for a free account.
+We will deploy our site to [Vercel](https://vercel.com/dashboard), another popular hosting provider for Jamstack sites. Head over there and sign up for a free account.
 
-Before we can use Vercel we first need to push our Gatsby site up to GitHub.
+Before we can use Vercel, we first need to push our Gatsby site up to GitHub.
 
 _**If you forget how to do this, please take a look back at the Hugo Blog project where I show you how to set this up.**_
 
-Once you are logged into Vercel you should be taken to your dashboard.
+After logging in, you should see Vercel's dashboard.
 
 ![Vercel Dashboard](images/gatsby-ecommerce/vercel_dashboard.png)
 
-Click on "Import project" and then "Import Git Repository"
+Click on "Import project" and then "Import Git Repository."
 
 ![Vercel import repo](images/gatsby-ecommerce/vercel_import_repo.png)
 
-You then need to paste in the url of your repo from GitHub and press "Continue"
+You then need to paste in the URL of your repo from GitHub and press "Continue."
 
-Vercel is smart enough to detect that this is a Gatsby project and so the "Build and Output Settings" are already configured for us. However we do need to paste in our `.env` variables in the "Environment Variables" section.
+Vercel is smart enough to detect that this is a Gatsby project, and so the "Build and Output Settings" are already configured for us. However, we need to paste in our `.env` variables in the "Environment Variables" section.
 
 ![Vercel Environment Variables](images/gatsby-ecommerce/vercel_environment_variables.png)
 
 Then press the "Deploy" button.
 
-After a couple mins or so you should see the following if your site was deployed successfully.
+After a couple of mins or so, you should see the following.
 
 ![Vercel Successful Deploy](images/gatsby-ecommerce/vercel_successful_deploy.png)
 
 Click the "Visit" button to see the live site.
 
-Try and make a test purchase and confirm the purchase is displayed in your Stripe dashboard.
+Make a test purchase to ensure that Stripe checkout is working correctly.
 
 ## GitHub Repo
 The completed project can be found here inside of `Gatsby-eCommerce/final` 
@@ -505,4 +504,4 @@ The completed project can be found here inside of `Gatsby-eCommerce/final`
 
 ## Wrap Up
 
-In this tutorial we learned how to create an ecommerce site using Gatsby and Stripe Checkout. We also installed a shopping cart plugin and deployed our site to Vercel.
+In this tutorial, we learned how to create an ecommerce site using Gatsby and Stripe Checkout. We also installed a shopping cart plugin and deployed our site to Vercel.
