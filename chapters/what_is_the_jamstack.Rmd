@@ -1,110 +1,77 @@
 # What is the Jamstack?
 
-There has been an [increasing trend](https://almanac.httparchive.org/en/2020/jamstack) over the last several years to
-break up traditional "monolithic" applications and architectures into smaller more maintainable pieces & services. The
-Jamstack is a continuation of that trend.  The Jamstack is fundamentally an architecture, a way of designing websites
-and applications. It is also a philosophy on how to build modern sites and applications.
+There has been an [increasing trend](https://almanac.httparchive.org/en/2020/jamstack) over the last several years to break up traditional "monolithic" applications and architectures into smaller, more maintainable pieces & services. The
+Jamstack is a continuation of that trend.  The Jamstack is fundamentally an architecture, a way of designing websites and applications. It is also a philosophy on how to build modern sites and applications.
 
 It primarily centers around two very important concepts: [pre-rendering](https://jamstack.org/glossary/pre-render/) and
 [de-coupling](https://jamstack.org/glossary/decoupling/). An important tool in the Jamstack architecture is the Static
-Site Generator which "pre-renders" all of your content into static files, ie `.html`, `.css`, `.js`, etc. This means
-that when a user lands on your site or application, the 'server', most often a CDN, renders that static `.html` file to
-the user. This makes Jamstack sites & applications incredibly fast, secure & reliable.
+Site Generator which "pre-renders" all of your content into static files, ie `.html`, `.css`, `.js`, etc. When a user lands on your site or application, the server, most often a CDN, renders that static `.html` file to
+the user; making Jamstack sites & applications incredibly fast, secure & reliable.
 
-De-coupling involves breaking up applications into smaller API's, services or systems. This de-coupling allows you to
-create services that are single purpose and ideally do one thing very well. By having a de-coupled architecture you can
-more easily maintain, swap out or replace those services. This also allows you to take advantage of 3rd party services
-and API's which allow you to focus on the areas and domains you know well and let other experts handle the areas and
-domains you don't. Do you really want to role your own authentication or ecommerce solution from scatch, or
+De-coupling involves breaking up applications into smaller APIs, services, or systems. This de-coupling allows you to create services that are single purpose and ideally do one thing very well. You can more easily maintain, swap out, or replace those services with this architecture. It also allows you to take advantage of 3rd party services and APIs, allowing you to focus on the areas and domains you know well and let other experts handle the aspects you don't. Do you honestly want to roll your own authentication or ecommerce solution from scratch, or
 would you gladly pay someone else to handle that for you?
 
 ## JavaScript, API's Markup
 
-Now that you understand the two main concepts of the Jamstack, just what exactly is the "Jam" all about? The "Jam" in
-Jamsstack is an acronymn that stands for JavaScript, API's & Markup. These 3 components are the building blocks of any
-Jamstack site or application.
+Now that you understand the two main concepts of the Jamstack, just what exactly is the "Jam" in Jamstack? The "Jam" in Jamsstack is an acronym that stands for JavaScript, APIs & Markup. These three components are the building blocks of any Jamstack site or application.
 
 ### JavaScript
 
-JavaScript has exploded in popularity over the years and it is showing no signs of slowing down anytime soon. It is also
-what enables Jamstack sites to communicate to various API's and services. JS is responsible for the dynamic aspects of a
-Jamstack application, which often seems to confuse people.
+JavaScript has exploded in popularity over the years, and it is showing no signs of slowing down anytime soon. It is also what enables Jamstack sites to communicate with various APIs and services. JS is responsible for the dynamic aspects of a Jamstack application, which often seems to confuse people.
 
-When people hear the word 'static' sites, they assume that there is not dynamic or interactive elements. This could not
-be further from the truth with Jamstack sites and modern front-end ui libraries/frameworks like React, Vue, Angular,
-etc. Jamstack sitess are static in that they serve up pre-rendered static files, however the UX can be as dynamic as you
-wish, as you will later discover in the projects of this book where we build an ecommerce store and membership site.
+When people hear the word 'static' sites, they assume no dynamic or interactive elements. This could not be further from the truth. Modern front-end frameworks, like React, Vue, Angular, etc., allow for rich user interactions and UX. Jamstack sites are static in that they serve up pre-rendered static files. However, the UX can be as dynamic as you
+wish, as you will later discover in the projects of this book, where we build an ecommerce store and membership site.
 
 ### API's
 
-API's refers to the services or systems used to build a Jamstack site, the de-coupling aspect. These are most often 3rd
-party services, but you can also create and write your own. The Jamstack ecosytem is incredibly rich will all kinds of
-services for accepting payments, authentication/authohrization, ecommerce, membership, databases, etc.
+APIs refer to the services or systems used to build a Jamstack site, the de-coupling aspect. These are most often third-party services, but you can also create your own. The Jamstack ecosystem is vibrant will all kinds of services for accepting payments, authentication/authorization, ecommerce, membership, databases, etc.
 
-At the end of this book there is a resources section with tons of links to the various services and API's available for
-you to build your sites and applications with.
+At the end of this book, there is a resources section with links to the various services and APIs available to build your sites and applications.
 
 ### Markup
 
-The last piece of the Jam is Markup. This ultimately ends up being HTML, but many Jamstack sites also make liberal use
-of Markdown. Markdown is a simple markup langauge that allows content writers and creators to write content without
-having to worry about HTML formatting, tags, etc. 
+The last piece of the Jam is Markup. The markup ultimately ends up being HTML, but many Jamstack sites also make liberal use of Markdown. Markdown is a simple markup language that allows content writers and creators to write content without worrying about HTML formatting, tags, etc. 
 
-A static site generator typically takes this markdown and converts it to html during the `build` process where a site is
+A static site generator typically takes this Markdown and converts it to HTML during the `build` process where a site is
 packaged up and prepared for deployment.
 
 ## Tools & services
 
-While every Jamstack architecture is unique, there are a common set of tools and services you will often find among them.
+While every Jamstack architecture is unique, you will often find a common set of tools and services among them.
 
 ### Static site generator
 
 ![Static Site Generator - source:https://bejamas.io/blog/static-site-generators/](images/ssg.png)
 
 A [static site generator](https://jamstack.org/generators/) is a tool that takes your site and builds it into static
-files, which you then deploy to production, usually a CDN. Often these tools take `.md` or markdown files, and convert
-them to `.html` pages. These tools are also responsible for compiling JS, CSS, PostCSS, images, fonts, etc into their
-production ready form.
+files, which you then deploy to production, usually a CDN. Often these tools take `.md` or Markdown files, and convert
+them to `.html` pages. These tools are also responsible for compiling JS, CSS, PostCSS, images, fonts, etc., into their production-ready form.
 
 ### CDN - content delivery network
 
 ![CDN (Content Delivery Network - source: https://imagekit.io/blog/what-is-content-delivery-network-cdn-guide/)](images/cdn.jpg)
 
-A CDN or content delivery network takes your site and deploys it to servers all around the world. This allows your
-users, no matter where they are in the world, to quickly download your site to a location nearest to them. 
+A CDN or content delivery network takes your site and deploys it to servers all around the world. No matter where your users are in the world, they can quickly download it from the nearest location. 
 
-For example, let's say you live in the US and your site is deployed to a server in New York. When a user from Australia
-tries to access it, that request has to travel all the way from Australia to New York and back again before anything is
-rendered on the page. Whereas, with a CDN, your site will be deployed to a server in Australia and so the distance that
-request has to travel is significantly shorter.
+For example, let's say you live in the US, and your site lives on a server in New York. When a user from Australia tries to access it, that request travels from Australia to New York and back again before the page renders. With a CDN, your site is lives on a server in Australia, making the distance the request has to travel significantly shorter.
 
 ### Headless CMS
 
 ![Headless CMS - source: https://bejamas.io/blog/headless-cms/](images/headless-cms.png)
 
-With a more tradional 'monolithic' CMS, the CMS itself is responsible for rendering the templates/views to the user
-dynamically when they request them. Since a Jamstack site is pre-rendered, this is not possible. A [headless
-CMS](https://jamstack.org/headless-cms/) therefore is responsible solely for managing content, not the presentation or
-view layer. They typically expose the content via a REST API or GraphQL API which a static site generator then extracts
-the content needed during the build/compile step. Once the SSG has all of the content, it injects it into the templates
-and outputs `.html` files.
+With a more traditional 'monolithic' CMS, the CMS is responsible for rendering views dynamically. Since a Jamstack site is pre-rendered, this is not possible. Therefore, a [headless CMS (https://jamstack.org/headless-cms/) is responsible solely for managing content, not the presentation or view layer. They typically expose the content via a REST API or GraphQL API. A static site generator will then extract the content needed during the build/compile step. Once the SSG has all of the content, it injects it into the templates and outputs `.html` files.
 
 ### Continuous Integration & Deployment
 
 ![CI/CD - source: https://solidstudio.io/blog/ci-cd-pipelines.html](images/ci-cd.png)
 
-Another important aspect of the Jamstack architecture is CI/CD. What this allows is for a developer or content creator
-to automatically create a new build and deploy to production with the simple click of a button, or via a merge into
-`master` in a repo.
+Another critical aspect of the Jamstack architecture is CI/CD. This allows  a developer or content creator to automatically create a new build to production with the simple click of a button or via a merge into
+version control.
 
-Most headless CMS's will trigger a webhook when a content author saves a change which will then trigger the CI/CD
-pipelines on the hosting provider which will then build and deploy the latest changes. Most hosting providers are also
-configured to trigger a new build & deploy when a new commit is merged into `master`.
+Most headless CMS's will trigger a webhook when a content author saves a change. This webhook will then start the CI/CD pipelines on the hosting provider, building and deploying the latest changes. Most hosting providers also trigger a new build when a new commit merges into `master.`
 
 ### Version control
 
 ![Git - source: https://www.nobledesktop.com/learn/git/git-branches](images/git.png)
 
-A Jamstack site can be stored entirely in a repo under version control, usually Git. This allows a developer to easily
-`clone` it and get the entire site or application up and running locally within minutes. No longer will you have to
-worry about cloning a database or setting up/configuring complex local dev environments.
+A Jamstack site can be stored entirely in a repo under version control, usually Git. This allows a developer to quickly `clone` it and get the entire site or application up and running locally within minutes. No longer will you have to worry about cloning a database or setting up/configuring complex local dev environments.
