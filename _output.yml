@@ -4,8 +4,8 @@ bookdown::bs4_book:
     primary: '#637238'
   repo: https://github.com/robertguss/howtocode-understanding-the-jamstack
   includes:
-    in_header: [header.html]
-    after_body: [footer.html]
+    in_header: [includes/header.html]
+    after_body: [includes/footer.html]
 
 # Gitbook
 bookdown::gitbook:

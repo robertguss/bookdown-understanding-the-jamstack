@@ -1,6 +1,6 @@
 book_filename: 'Understanding the Jamstack'
 delete_merged_file: true
-new_session: yes
+# new_session: yes
 # language:
 #   ui:
 #     chapter_name: 'Chapter '
@@ -8,11 +8,11 @@ new_session: yes
 rmd_files:
   [
     'index.Rmd',
-    'what_is_the_jamstack.Rmd',
-    'jamstack_pros_cons.Rmd',
-    'projects.Rmd',
-    'project_hugo_blog.Rmd',
-    'project_eleventy_membership.Rmd',
-    'project_gatsby_ecommerce.Rmd',
-    'resources.Rmd',
+    'chapters/what_is_the_jamstack.Rmd',
+    'chapters/jamstack_pros_cons.Rmd',
+    'chapters/projects.Rmd',
+    'chapters/project_hugo_blog.Rmd',
+    'chapters/project_eleventy_membership.Rmd',
+    'chapters/project_gatsby_ecommerce.Rmd',
+    'chapters/resources.Rmd',
   ]
