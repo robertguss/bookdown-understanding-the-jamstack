@@ -1,4 +1,4 @@
-# Ecommerce with Gatsby & Stripe Checkout
+_**This project builds on top of the [Gatsby E-commerce Tutorial](https://www.gatsbyjs.com/tutorial/ecommerce-tutorial) provided in the official Gatsby docs, and the [Use Shopping Cart Example repo](https://github.com/dayhaysoos/use-shopping-cart/tree/master/examples/gatsby).**_
 
 In this project, we will be creating a simple e-commerce web site with Gatbsy and Stripe checkout. Stripe checkout is client-side checkout that allows us to integrate a complete checkout experience without a backend.
 
@@ -41,11 +41,12 @@ With both of these packages installed, we now need to add the `gatsby-source-str
 
 ```js
 {
-resolve: `gatsby-source-stripe`,
-options: {
-  objects: ["Price"],
-  secretKey: 'secret key goes here',
-  downloadFiles: false,
+  resolve: `gatsby-source-stripe`,
+  options: {
+    objects: ["Price"],
+    secretKey: 'secret key goes here',
+    downloadFiles: false,
+  }
 },
 ```
 
@@ -121,8 +122,8 @@ touch .env.production
 Within both files, add both your `Publishable` and `Secret` keys like so:
 
 ```bash
-GATSBY_STRIPE_SECRET=sk_test_FOlN...
-GATSBY_STRIPE_PUBLISHABLE=pk_test_ibqK...
+GATSBY_STRIPE_SECRET_KEY=sk_test_FOlN...
+GATSBY_STRIPE_PUBLISHABLE_KEY=pk_test_ibqK...
 ```
 
 The `GATSBY` prefix is important because we need these variables exposed to the client. You can read more about this [here](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/#example-of-using-an-environment-variable)
@@ -145,7 +146,7 @@ Now we need to use these env variables in our Gatsby config.
   resolve: `gatsby-source-stripe`,
   options: {
     objects: ['Price'],
-    secretKey: process.env.GATSBY_STRIPE_SECRET,
+    secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
     downloadFiles: false,
   },
 },
@@ -204,7 +205,7 @@ import { loadStripe } from '@stripe/stripe-js';
 let stripePromise;
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE);
+    stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY);
   }
   return stripePromise;
 };
@@ -228,57 +229,78 @@ npm install --S use-shopping-cart
 
 Now that we have some products uploaded to Stripe, and your shopping cart installed, we need to display them on our Gatsby site.
 
+_**The following code comes from the [Use Shopping Cart Example Gatsby Repo](https://github.com/dayhaysoos/use-shopping-cart/tree/master/examples/gatsby) with only slight modifications made by me**_
+
 ### Index Page
 
 Withing `/pages/index.js`, add the following.
 
 ```js
-import React from 'react';
+import React from 'react'
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import Products from '../components/Products/Products';
-import CartOverview from '../components/CartOverview';
+import Skus from '../components/Products/Skus'
+import CartOverview from '../components/CartOverview'
 
-import { loadStripe } from '@stripe/stripe-js';
-import { CartProvider } from 'use-shopping-cart';
+import { loadStripe } from '@stripe/stripe-js'
+import { CartProvider } from 'use-shopping-cart'
 
-const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE);
-
-const url = typeof window !== 'undefined' ? window.location.origin : null;
+const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 
 const CartExample = () => (
   <Layout>
-    <SEO title="Dev Shirts" />
+    <SEO title="Cart Example" />
+    <h1>Checkout with cart example</h1>
+    <h2>
+      With{' '}
+      <a href="https://use-shopping-cart.netlify.app/">use-shopping-cart</a>
+    </h2>
     <CartProvider
       mode="client-only"
       stripe={stripePromise}
-      successUrl={`${url}/page-2/`}
-      cancelUrl={`${url}/`}
+      successUrl={`${window.location.origin}/page-2/`}
+      cancelUrl={`${window.location.origin}/`}
       currency="USD"
       allowedCountries={['US', 'GB', 'CA']}
       billingAddressCollection={true}
     >
       <CartOverview />
-      <Products />
+      <Skus />
     </CartProvider>
   </Layout>
-);
+)
 
-export default CartExample;
+export default CartExample
 ```
 
-### Products Component
-
-Create a new folder called `Products` inside the `src/components folder` and create a file called `Products.js`.
+#### Index Page Breakdown
 
 ```js
-// src/components/Products/Products.js
+<CartProvider // This component comes from the use-shopping-cart package
+  mode="client-only" // allows client-side checkout
+  stripe={stripePromise} // Our Stripe instance so we can communicate with the Stripe API
+  successUrl={`${window.location.origin}/page-2/`} // the url to redirect to after a successful purchase
+  cancelUrl={`${window.location.origin}/`} // the url to redirect to when they cancel a purchase
+  currency="USD" // US Dollars is the type of currency we are accepting
+  allowedCountries={['US', 'GB', 'CA']}
+  billingAddressCollection={true} // allows the collection of the users billing address for Stripe
+>
+  <CartOverview /> // We will create and go over this component later
+  <Skus /> // We will create and go over this component next
+</CartProvider>
+```
 
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import ProductCard from './ProductCard';
+### Skus Component
+
+Create a new folder called `Products` inside the `src/components folder` and create a file called `Skus.js`.
+
+```js
+// src/components/Products/Skus.js
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import SkuCard from './SkuCard'
 
 const conatinerStyles = {
   display: 'flex',
@@ -286,7 +308,7 @@ const conatinerStyles = {
   flexWrap: 'wrap',
   justifyContent: 'space-between',
   padding: '1rem 0 1rem 0',
-};
+}
 
 export default (props) => (
   <StaticQuery
@@ -305,7 +327,7 @@ export default (props) => (
               product {
                 id
                 name
-                images
+				images
               }
             }
           }
@@ -315,30 +337,75 @@ export default (props) => (
     render={({ prices }) => (
       <div style={conatinerStyles}>
         {prices.edges.map(({ node: price }) => {
-          const newProduct = {
+          const newSku = {
             sku: price.id,
             name: price.product.name,
             price: price.unit_amount,
             currency: price.currency,
             image: price.product.images,
-          };
-          return <ProductCard key={price.id} product={newProduct} />;
+          }
+          return <SkuCard key={price.id} sku={newSku} />
         })}
       </div>
     )}
   />
-);
+)
 ```
 
-### Product Card Component
-
-Create a new file called `ProductCard.js` in the `src/components/Products` folder.
+#### Skus Component Brekdown
 
 ```js
-// src/components/Products/ProductCard.js
-import React from 'react';
+query ProductPrices {
+  prices: allStripePrice(
+    filter: { active: { eq: true }, currency: { eq: "usd" } }
+    sort: { fields: [unit_amount] }
+  ) {
+    edges {
+      node {
+        id
+        active
+        currency
+        unit_amount
+        product {
+          id
+          name
+          images
+        }
+      }
+    }
+  }
+}
+```
+This is our GraphQL query which fetches the product data from Stripe. We are filtering for only active products where the currency is `==` US Dollars. We then retrieve the id, whether or not the product is active, the currency, unit_amount, product id, product name, and product images.
 
-import { useShoppingCart, formatCurrencyString } from 'use-shopping-cart';
+```js
+render={({ prices }) => (
+  <div style={conatinerStyles}>
+    {prices.edges.map(({ node: price }) => {
+      const newSku = {
+        sku: price.id,
+        name: price.product.name,
+        price: price.unit_amount,
+        currency: price.currency,
+        image: price.product.images,
+      }
+      return <SkuCard key={price.id} sku={newSku} />
+    })}
+  </div>
+)}
+```
+
+We then take the results of our GraphQL query and `map` over the products returned and create a `newSku` object for each product. We then take the `newSku` object and pass it into the `<SkuCard />` component via the `sku` prop.
+
+### Sku Card Component
+
+Create a new file called `SkuCard.js` in the `src/components/Products` folder.
+
+```js
+// src/components/Products/SkuCard.js
+import React from 'react'
+
+import { useShoppingCart, formatCurrencyString } from 'use-shopping-cart'
 
 const cardStyles = {
   display: 'flex',
@@ -351,7 +418,7 @@ const cardStyles = {
   backgroundColor: '#fff',
   borderRadius: '6px',
   maxWidth: '300px',
-};
+}
 const buttonStyles = {
   fontSize: '13px',
   textAlign: 'center',
@@ -362,31 +429,35 @@ const buttonStyles = {
   backgroundColor: 'rgb(255, 178, 56)',
   borderRadius: '6px',
   letterSpacing: '1.5px',
-};
+}
 
-const ProductCard = ({ product }) => {
-  const { addItem } = useShoppingCart();
+const SkuCard = ({ sku }) => {
+  const { addItem } = useShoppingCart()
 
   return (
     <div style={cardStyles}>
-      <img src={product.image} alt="" />
-      <h4>{product.name}</h4>
+      <img src={sku.image} alt=""/>
+      <h4>{sku.name}</h4>
       <p>
         Price:{' '}
         {formatCurrencyString({
-          value: parseInt(product.price),
-          currency: product.currency,
+          value: parseInt(sku.price),
+          currency: sku.currency,
         })}
       </p>
-      <button style={buttonStyles} onClick={() => addItem(product)}>
+      <button style={buttonStyles} onClick={() => addItem(sku)}>
         ADD TO CART
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default ProductCard;
+export default SkuCard
 ```
+
+#### Sku Card Component Breakdown
+
+This component is fairly straight forward. We take the data passed into it via the `sku` prop and then render the appropriate markup and styling accordingly. This card component will wrap each of our products and display the product image, name, price and the Add to Cart button.
 
 ### Shopping Cart Component
 
@@ -395,9 +466,9 @@ Lastly, we will create a component for our shopping cart.
 ```js
 // src/components/CartOverview.js
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import { useShoppingCart } from 'use-shopping-cart';
+import { useShoppingCart } from 'use-shopping-cart'
 
 const buttonStyles = {
   fontSize: '13px',
@@ -409,17 +480,17 @@ const buttonStyles = {
   backgroundColor: 'rgb(255, 178, 56)',
   borderRadius: '6px',
   letterSpacing: '1.5px',
-};
+}
 
 const Cart = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
   /* Gets the totalPrice and a method for redirecting to stripe */
   const {
     formattedTotalPrice,
     redirectToCheckout,
     cartCount,
     clearCart,
-  } = useShoppingCart();
+  } = useShoppingCart()
 
   return (
     <div>
@@ -432,8 +503,8 @@ const Cart = () => {
         style={buttonStyles}
         disabled={loading}
         onClick={() => {
-          setLoading(true);
-          redirectToCheckout();
+          setLoading(true)
+          redirectToCheckout()
         }}
       >
         {loading ? 'Loading...' : 'Checkout'}
@@ -442,13 +513,19 @@ const Cart = () => {
         Clear cart
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart
 ```
 
+#### Shopping Cart Component Breakdown
+
+Our shopping cart displays the total number of products in our cart and the total price of all of those items and two buttons. One button redirects to the checkout, which is Stripe checkout in our case, and the other empties the cart.
+
 Our site should now look like this.
+
+### Finished Store
 
 ![Gatsby store home page](images/gatsby-ecommerce/gatsby_store_home_page.png)
 
