@@ -21,28 +21,27 @@ cover-image: images/cover.png
 
 ![Understanding the Jamstack Cover](images/cover.png)
 
-I wrote "Understanding the Jamstack" to help developers better understand the Jamstack architecture/philosophy and its
-ecosystem. There are lots of tutorials, blog posts, articles, YouTube videos, etc. about the Jamstack, but I have yet to
-find a comprehensive resource, with projects, so that you can learn first hand how to build with this architecture.
+I wrote "Understanding the Jamstack" to help developers better understand the Jamstack architecture, philosophy, and
+ecosystem. I have yet to find a comprehensive, project focused resource, that aims to help developers learn first hand how to build with this architecture.
 
 This book is my attempt at being that resource.
 
-Not only will you learn what the Jamstack is, but you will also build a few projects to gain a better understanding of
+Not only will you learn what the Jamstack is, but you will also build projects to gain a better understanding of
 what is possible with it. In the projects, you will learn the various tools, technologies, and services in the
-ecosystem. 
+ecosystem.
 
 Each project intentionally uses different tooling to give you as much experience with as many tools as possible.
-However, I cannot go into great depth about each technology and service used throughout the book. At the end of the
-book, there is a "resources" chapter, that contains links to articles, videos, services, and tools, to learn more.
+However, I do not take a "deep dive" into each technology and service used. At the end of the
+book, you will find a "resources" chapter, which contains links to articles, videos, services, and tools to learn more.
 
 This book is _not_ for beginners. I assume you know, at the very least, HTML, CSS, and JavaScript. 
 
-Finally, I would like to thank you for taking the time to read this book. I have put in countless hours creating it. It has been a labor of love and a passion of mine. I hope it will serve you well.
+Finally, I would like to thank you for taking the time to read this book. I have put in many hours creating it. It has been a labor of love and a passion of mine. I hope it will serve you well.
 
 I would love to hear any feedback, corrections, criticism, etc. The book is open source and lives [here](https://github.com/robertguss/bookdown-understanding-the-jamstack) if you find any typos or would like to
 contribute, feel free to submit a PR.
 
-You can find me on [Twitter](https://twitter.com/_howtocode_). You can reach me via email at <a href="mailto:howtocode@pm.me">howtocode@pm.me</a>
+You can find me on [Twitter](https://twitter.com/howtocode_io), or you can contact me via email at <a href="mailto:howtocode@pm.me">howtocode@pm.me</a>
 
 Cheers,
 
