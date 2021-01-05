@@ -31,11 +31,3 @@ bookdown::pdf_book:
 
 # EPUB
 bookdown::epub_book: default
-
-# Tufte
-bookdown::tufte_html_book:
-  toc: yes
-
-# Bootstrap
-bookdown::html_book:
-  toc: yes
