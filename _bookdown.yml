@@ -9,6 +9,7 @@ rmd_files:
   [
     'index.Rmd',
     'chapters/dedication.Rmd',
+    'chapters/instructions.Rmd',
     'chapters/what_is_the_jamstack.Rmd',
     'chapters/pros_cons.Rmd',
     'chapters/projects.Rmd',

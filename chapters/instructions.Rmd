@@ -1,4 +1,4 @@
-# Projects {-}
+# How to use this book {-}
 
 You can find the repo for all of the projects [here](https://github.com/robertguss/howtocode-understanding-the-jamstack)
 

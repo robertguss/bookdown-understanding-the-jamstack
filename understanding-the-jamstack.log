@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.30)  5 JAN 2021 11:06
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.30)  5 JAN 2021 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -829,14 +829,6 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ]
 File: images/cover.png Graphic file (type bmp)
 <images/cover.png>
-
-Overfull \hbox (79.88165pt too wide) in paragraph at lines 134--134
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 24.06857pt on input line 135.
-
 [7] [8] [9
 
 ] [10
@@ -860,7 +852,7 @@ File: images/ci-cd.png Graphic file (type bmp)
 File: images/git.png Graphic file (type bmp)
 <images/git.png>
 
-Underfull \hbox (badness 2608) in paragraph at lines 275--275
+Underfull \hbox (badness 2608) in paragraph at lines 277--277
 []\TU/lmr/m/n/10 Figure 1.5: []Git - source: []$[][][][][] [] [] [] [][][] [] [
 ][][][][][][][][][][][] [] [][][] [] [][][][][] [] [][][] [] [][][] [][]
  []
@@ -872,14 +864,14 @@ File: images/performance-quotes.png Graphic file (type bmp)
 File: images/performance-infographic.jpg Graphic file (type bmp)
 <images/performance-infographic.jpg>
 
-LaTeX Warning: Float too large for page by 24.06178pt on input line 314.
+LaTeX Warning: Float too large for page by 24.06178pt on input line 316.
 
 File: images/cdn.jpg Graphic file (type bmp)
 <images/cdn.jpg>
 File: images/security.png Graphic file (type bmp)
 <images/security.png>
 
-Underfull \hbox (badness 1009) in paragraph at lines 331--331
+Underfull \hbox (badness 1009) in paragraph at lines 333--333
 []\TU/lmr/m/n/10 Figure 2.4: []Security - source: []$[][][][][] [] [] [] [][][]
  [] [][][][][][] [] [][][] [] [][][][][][][][] [] [][] [][] [][][][] [][]
  []
@@ -921,7 +913,7 @@ File: images/stripe.png Graphic file (type bmp)
 Chapter 3.
 
 LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 537.
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 539.
 
 [33]
 File: images/jamstack-hugo-blog/ink_github_download.png Graphic file (type bmp)
@@ -931,13 +923,13 @@ File: images/jamstack-Hugo-blog/ink_directory_listing.png Graphic file (type bm
 p)
 <images/jamstack-Hugo-blog/ink_directory_listing.png>
 
-Underfull \hbox (badness 1009) in paragraph at lines 566--568
+Underfull \hbox (badness 1009) in paragraph at lines 568--570
 []\TU/lmr/m/n/10 Copy the directory \TU/lmtt/m/n/10 themes/ink/exampleSite/cont
 ent/ \TU/lmr/m/n/10 and replace
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 570--571
+Underfull \hbox (badness 4084) in paragraph at lines 572--573
 []\TU/lmr/m/n/10 Copy the file \TU/lmtt/m/n/10 themes/ink/exampleSite/config.to
 ml \TU/lmr/m/n/10 and replace
  []
@@ -948,7 +940,7 @@ File: images/jamstack-hugo-blog/ink-home-page.jpg Graphic file (type bmp)
 Missing character: There is no 😎 in font [lmroman10-regular]:mapping=tex-text;!
 [35]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 611.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 613.
 [36]
 File: images/jamstack-Hugo-blog/new-post.jpg Graphic file (type bmp)
 <images/jamstack-Hugo-blog/new-post.jpg>
@@ -1005,17 +997,17 @@ File: images/jamstack-Hugo-blog/netlify_services_git_gateway.png Graphic file (
 type bmp)
 <images/jamstack-Hugo-blog/netlify_services_git_gateway.png>
 [49] [50] [51]
-Overfull \hbox (59.38pt too wide) in paragraph at lines 1029--1030
+Overfull \hbox (59.38pt too wide) in paragraph at lines 1031--1032
 \TU/lmr/m/n/10 on every page. Paste inside of the \TU/lmtt/m/n/10 <head> \TU/lm
 r/m/n/10 of \TU/lmtt/m/n/10 /themes/ink/layouts/partials/header.html. 
  []
 
 [52]
-Underfull \vbox (badness 10000) detected at line 1108
+Underfull \vbox (badness 10000) detected at line 1110
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1108
+Underfull \vbox (badness 10000) detected at line 1110
  []
 
 [53] [54]
@@ -1296,7 +1288,7 @@ PE CHECKOUT
  []
 
 [98]
-Overfull \hbox (25.15202pt too wide) in paragraph at lines 2101--2102
+Overfull \hbox (25.15202pt too wide) in paragraph at lines 2103--2104
 []\TU/lmr/m/n/10 With both of these packages installed, we now need to add the 
 \TU/lmtt/m/n/10 gatsby-source-stripe
  []
@@ -1320,7 +1312,7 @@ IPE CHECKOUT
  []
 
 [102]
-Overfull \hbox (156.31003pt too wide) in paragraph at lines 2252--2254
+Overfull \hbox (156.31003pt too wide) in paragraph at lines 2254--2256
 \TU/lmr/m/n/10 Now let’s set up and configure Stripe checkout. Head over to \TU
 /lmtt/m/n/10 https://dashboard.stripe.com/settings/checkout\TU/lmr/m/n/10 .
  []
@@ -1422,7 +1414,7 @@ IPE CHECKOUT
 File: images/jamstack-landscape.png Graphic file (type bmp)
 <images/jamstack-landscape.png>
 
-LaTeX Warning: Float too large for page by 36.45856pt on input line 2762.
+LaTeX Warning: Float too large for page by 36.45856pt on input line 2764.
 
 [121]
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
@@ -1445,10 +1437,10 @@ ged.
 (rerunfilecheck)             Checksum: 869DC7A848E57986ED1CCEFD37CAAB9F;8182.
  ) 
 Here is how much of TeX's memory you used:
- 19187 strings out of 479290
- 356046 string characters out of 5875977
- 820891 words of memory out of 5000000
- 38292 multiletter control sequences out of 15000+600000
+ 19178 strings out of 479290
+ 355950 string characters out of 5875977
+ 820752 words of memory out of 5000000
+ 38286 multiletter control sequences out of 15000+600000
  409921 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,6n,118p,635b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
