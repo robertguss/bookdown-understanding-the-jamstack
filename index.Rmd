@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 url: 'https\://howtocode.io'
-github-repo: robertguss/howtocode-understanding-the-jamstack
+github-repo: robertguss/bookdown-understanding-the-jamstack
 twitter-handle: howtocode_io
 cover-image: images/cover.png
 description: ""
@@ -16,18 +16,9 @@ description: ""
 
 ![Understanding the Jamstack Cover](images/cover.png)
 
-I wrote "Understanding the Jamstack" to help developers better understand the Jamstack architecture, philosophy, and
-ecosystem. I have yet to find a comprehensive, project focused resource, that aims to help developers learn first hand how to build with this architecture.
+"Understanding the Jamstack" was written to help developers better understand the Jamstack architecture, philosophy, and ecosystem. Not only will you learn what the Jamstack is, but you will also build several projects to gain a better understanding of what is possible with it. 
 
-This book is my attempt at being that resource.
-
-Not only will you learn what the Jamstack is, but you will also build projects to gain a better understanding of
-what is possible with it. In the projects, you will learn the various tools, technologies, and services in the
-ecosystem.
-
-Each project intentionally uses different tooling to give you as much experience with as many tools as possible.
-However, I do not take a "deep dive" into each technology and service used. At the end of the
-book, you will find a "resources" chapter, which contains links to articles, videos, services, and tools to learn more.
+In the projects, you will learn the latest tools, technologies, and services in the ecosystem. Each project intentionally uses different tooling to give you as much experience with as many tools as possible.
 
 This book is _not_ for beginners. I assume you know, at the very least, HTML, CSS, and JavaScript. 
 

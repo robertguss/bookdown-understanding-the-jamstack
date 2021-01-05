@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.30)  5 JAN 2021 11:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.30)  5 JAN 2021 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,12 +833,14 @@ File: images/cover.png Graphic file (type bmp)
 
 ] [10
 
+] [11] [12
+
 ]
 Chapter 1.
-[11]
+[13]
 File: images/ssg.png Graphic file (type bmp)
 <images/ssg.png>
-[12]
+[14]
 File: images/cdn.jpg Graphic file (type bmp)
 <images/cdn.jpg>
 File: images/headless-cms.png Graphic file (type bmp)
@@ -846,76 +848,76 @@ File: images/headless-cms.png Graphic file (type bmp)
 
 Underfull \vbox (badness 2503) has occurred while \output is active []
 
-[13] [14]
+[15] [16]
 File: images/ci-cd.png Graphic file (type bmp)
 <images/ci-cd.png>
 File: images/git.png Graphic file (type bmp)
 <images/git.png>
 
-Underfull \hbox (badness 2608) in paragraph at lines 277--277
+Underfull \hbox (badness 2608) in paragraph at lines 318--318
 []\TU/lmr/m/n/10 Figure 1.5: []Git - source: []$[][][][][] [] [] [] [][][] [] [
 ][][][][][][][][][][][] [] [][][] [] [][][][][] [] [][][] [] [][][] [][]
  []
 
-[15] [16]
+[17] [18]
 Chapter 2.
 File: images/performance-quotes.png Graphic file (type bmp)
 <images/performance-quotes.png>
 File: images/performance-infographic.jpg Graphic file (type bmp)
 <images/performance-infographic.jpg>
 
-LaTeX Warning: Float too large for page by 24.06178pt on input line 316.
+LaTeX Warning: Float too large for page by 24.06178pt on input line 357.
 
 File: images/cdn.jpg Graphic file (type bmp)
 <images/cdn.jpg>
 File: images/security.png Graphic file (type bmp)
 <images/security.png>
 
-Underfull \hbox (badness 1009) in paragraph at lines 333--333
+Underfull \hbox (badness 1009) in paragraph at lines 374--374
 []\TU/lmr/m/n/10 Figure 2.4: []Security - source: []$[][][][][] [] [] [] [][][]
  [] [][][][][][] [] [][][] [] [][][][][][][][] [] [][] [][] [][][][] [][]
  []
 
-[17
+[19
 
-] [18] [19] [20]
+] [20] [21] [22]
 File: images/reliability.png Graphic file (type bmp)
 <images/reliability.png>
 File: images/costs.png Graphic file (type bmp)
 <images/costs.png>
-[21]
+[23]
 File: images/teams.png Graphic file (type bmp)
 <images/teams.png>
-[22] [23]
+[24] [25]
 File: images/developer.png Graphic file (type bmp)
 <images/developer.png>
 
 Underfull \vbox (badness 2237) has occurred while \output is active []
 
-[24]
+[26]
 File: images/build-times.png Graphic file (type bmp)
 <images/build-times.png>
 File: images/up-front-costs.png Graphic file (type bmp)
 <images/up-front-costs.png>
-[25]
+[27]
 File: images/decoupling.png Graphic file (type bmp)
 <images/decoupling.png>
-[26]
+[28]
 File: images/content-preview.png Graphic file (type bmp)
 <images/content-preview.png>
 File: images/stripe.png Graphic file (type bmp)
 <images/stripe.png>
-[27] [28] [29] [30] [31
+[29] [30] [31] [32] [33
 
-] [32
+] [34
 
 ]
 Chapter 3.
 
 LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 539.
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 581.
 
-[33]
+[35]
 File: images/jamstack-hugo-blog/ink_github_download.png Graphic file (type bmp)
 
 <images/jamstack-hugo-blog/ink_github_download.png>
@@ -923,25 +925,25 @@ File: images/jamstack-Hugo-blog/ink_directory_listing.png Graphic file (type bm
 p)
 <images/jamstack-Hugo-blog/ink_directory_listing.png>
 
-Underfull \hbox (badness 1009) in paragraph at lines 568--570
+Underfull \hbox (badness 1009) in paragraph at lines 610--612
 []\TU/lmr/m/n/10 Copy the directory \TU/lmtt/m/n/10 themes/ink/exampleSite/cont
 ent/ \TU/lmr/m/n/10 and replace
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 572--573
+Underfull \hbox (badness 4084) in paragraph at lines 614--615
 []\TU/lmr/m/n/10 Copy the file \TU/lmtt/m/n/10 themes/ink/exampleSite/config.to
 ml \TU/lmr/m/n/10 and replace
  []
 
-[34]
+[36]
 File: images/jamstack-hugo-blog/ink-home-page.jpg Graphic file (type bmp)
 <images/jamstack-hugo-blog/ink-home-page.jpg>
 Missing character: There is no 😎 in font [lmroman10-regular]:mapping=tex-text;!
-[35]
+[37]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 613.
-[36]
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 655.
+[38]
 File: images/jamstack-Hugo-blog/new-post.jpg Graphic file (type bmp)
 <images/jamstack-Hugo-blog/new-post.jpg>
 File: images/jamstack-hugo-blog/new-repo.jpg Graphic file (type bmp)
@@ -950,13 +952,13 @@ File: images/jamstack-hugo-blog/github_create_repo.png Graphic file (type bmp)
 <images/jamstack-hugo-blog/github_create_repo.png>
 File: images/jamstack-hugo-blog/github_empty_repo.png Graphic file (type bmp)
 <images/jamstack-hugo-blog/github_empty_repo.png>
-[37]
+[39]
 File: images/jamstack-hugo-blog/github-instructions.jpg Graphic file (type bmp)
 
 <images/jamstack-hugo-blog/github-instructions.jpg>
 File: images/jamstack-Hugo-blog/github-repo-pushed.jpg Graphic file (type bmp)
 <images/jamstack-Hugo-blog/github-repo-pushed.jpg>
-[38] [39] [40]
+[40] [41] [42]
 File: images/jamstack-hugo-blog/netlify-dashboard.jpg Graphic file (type bmp)
 <images/jamstack-hugo-blog/netlify-dashboard.jpg>
 File: images/jamstack-Hugo-blog/netlify-git-provider.jpg Graphic file (type bmp
@@ -974,17 +976,17 @@ e (type bmp)
 File: images/jamstack-hugo-blog/netlify-site-broken.png Graphic file (type bmp)
 
 <images/jamstack-hugo-blog/netlify-site-broken.png>
-[41] [42] [43] [44]
+[43] [44] [45] [46]
 File: images/jamstack-hugo-blog/broken-site-dev-console.jpg Graphic file (type 
 bmp)
 <images/jamstack-hugo-blog/broken-site-dev-console.jpg>
 File: images/jamstack-hugo-blog/netlify-site-fixed.jpg Graphic file (type bmp)
 <images/jamstack-hugo-blog/netlify-site-fixed.jpg>
-[45]
+[47]
 File: images/jamstack-hugo-blog/netlify_cms_admin_folder.png Graphic file (type
  bmp)
 <images/jamstack-hugo-blog/netlify_cms_admin_folder.png>
-[46] [47] [48]
+[48] [49] [50]
 File: images/jamstack-hugo-blog/netlify_identity.png Graphic file (type bmp)
 <images/jamstack-hugo-blog/netlify_identity.png>
 File: images/jamstack-hugo-blog/netlify_registration_preferences.png Graphic fi
@@ -996,25 +998,25 @@ ic file (type bmp)
 File: images/jamstack-Hugo-blog/netlify_services_git_gateway.png Graphic file (
 type bmp)
 <images/jamstack-Hugo-blog/netlify_services_git_gateway.png>
-[49] [50] [51]
-Overfull \hbox (59.38pt too wide) in paragraph at lines 1031--1032
+[51] [52] [53]
+Overfull \hbox (59.38pt too wide) in paragraph at lines 1073--1074
 \TU/lmr/m/n/10 on every page. Paste inside of the \TU/lmtt/m/n/10 <head> \TU/lm
 r/m/n/10 of \TU/lmtt/m/n/10 /themes/ink/layouts/partials/header.html. 
  []
 
-[52]
-Underfull \vbox (badness 10000) detected at line 1110
+[54]
+Underfull \vbox (badness 10000) detected at line 1152
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1110
+Underfull \vbox (badness 10000) detected at line 1152
  []
 
-[53] [54]
+[55] [56]
 File: images/jamstack-hugo-blog/netlify_identity_login.png Graphic file (type b
 mp)
 <images/jamstack-hugo-blog/netlify_identity_login.png>
-[55]
+[57]
 File: images/jamstack-hugo-blog/netlify_identity_signup.png Graphic file (type 
 bmp)
 <images/jamstack-hugo-blog/netlify_identity_signup.png>
@@ -1025,7 +1027,7 @@ File: images/jamstack-hugo-blog/netlify_cms_publish_btn.png Graphic file (type
 bmp)
 <images/jamstack-hugo-blog/netlify_cms_publish_btn.png>
 Missing character: There is no 😎 in font [lmroman10-regular]:mapping=tex-text;!
-[56] [57]
+[58] [59]
 File: images/jamstack-Hugo-blog/netlify_build_hooks.png Graphic file (type bmp)
 
 <images/jamstack-Hugo-blog/netlify_build_hooks.png>
@@ -1035,7 +1037,7 @@ bmp)
 File: images/jamstack-Hugo-blog/netlify_build_hook_url.png Graphic file (type b
 mp)
 <images/jamstack-Hugo-blog/netlify_build_hook_url.png>
-[58] [59]
+[60] [61]
 File: images/jamstack-Hugo-blog/zapier_webook_post.png Graphic file (type bmp)
 <images/jamstack-Hugo-blog/zapier_webook_post.png>
 File: images/jamstack-Hugo-blog/zapier_every_day.png Graphic file (type bmp)
@@ -1050,29 +1052,29 @@ File: images/jamstack-hugo-blog/zapier_test_action.png Graphic file (type bmp)
 File: images/jamstack-Hugo-blog/zapier_test_success.png Graphic file (type bmp)
 
 <images/jamstack-Hugo-blog/zapier_test_success.png>
-[60]
+[62]
 File: images/jamstack-Hugo-blog/netlify_hook_success.png Graphic file (type bmp
 )
 <images/jamstack-Hugo-blog/netlify_hook_success.png>
 
 Underfull \vbox (badness 5036) has occurred while \output is active []
 
-[61] [62] [63] [64] [65] [66]
+[63] [64] [65] [66] [67] [68]
 Chapter 4.
 File: images/eleventy-membership/eleventy_server_urls.png Graphic file (type bm
 p)
 <images/eleventy-membership/eleventy_server_urls.png>
 File: images/eleventy-membership/eleventy_homepage.png Graphic file (type bmp)
 <images/eleventy-membership/eleventy_homepage.png>
-[67
+[69
 
 ]
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 68 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+\TU/lmr/m/n/10 70 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[68]
+[70]
 File: images/eleventy-membership/memberstack_select_a_builder.png Graphic file 
 (type bmp)
 <images/eleventy-membership/memberstack_select_a_builder.png>
@@ -1088,13 +1090,13 @@ le (type bmp)
 File: images/eleventy-membership/memberstack_basic_plan_settings.png Graphic fi
 le (type bmp)
 <images/eleventy-membership/memberstack_basic_plan_settings.png>
-[69]
+[71]
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 70 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+\TU/lmr/m/n/10 72 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[70] [71]
+[72] [73]
 File: images/eleventy-membership/memberstack_basic_page_hide_content.png Graphi
 c file (type bmp)
 <images/eleventy-membership/memberstack_basic_page_hide_content.png>
@@ -1103,11 +1105,11 @@ c file (type bmp)
 <images/eleventy-membership/memberstack_basic_page_after_signup.png>
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 72 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+\TU/lmr/m/n/10 74 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[72] [73]
+[74] [75]
 File: images/eleventy-membership/memberstack_basic_plan_dashboard.png Graphic f
 ile (type bmp)
 <images/eleventy-membership/memberstack_basic_plan_dashboard.png>
@@ -1122,11 +1124,11 @@ hic file (type bmp)
 <images/eleventy-membership/memberstack_premium_and_basic_content.png>
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 74 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+\TU/lmr/m/n/10 76 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[74] [75]
+[76] [77]
 File: images/eleventy-membership/memberstack_premium_page_after_signup.png Grap
 hic file (type bmp)
 <images/eleventy-membership/memberstack_premium_page_after_signup.png>
@@ -1138,11 +1140,11 @@ File: images/eleventy-membership/memberstack_basic_signup_link.png Graphic file
 <images/eleventy-membership/memberstack_basic_signup_link.png>
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 76 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+\TU/lmr/m/n/10 78 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[76] [77]
+[78] [79]
 File: images/eleventy-membership/memberstack_premium_signup_link.png Graphic fi
 le (type bmp)
 <images/eleventy-membership/memberstack_premium_signup_link.png>
@@ -1151,15 +1153,15 @@ Underfull \vbox (badness 1297) has occurred while \output is active []
 
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 78 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+\TU/lmr/m/n/10 80 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[78]
+[80]
 File: images/eleventy-membership/memberstack_install_header_code.png Graphic fi
 le (type bmp)
 <images/eleventy-membership/memberstack_install_header_code.png>
-[79]
+[81]
 File: images/eleventy-membership/memberstack_add_login_form.png Graphic file (t
 ype bmp)
 <images/eleventy-membership/memberstack_add_login_form.png>
@@ -1189,12 +1191,6 @@ File: images/eleventy-membership/eleventy_login_form.png Graphic file (type bmp
 <images/eleventy-membership/eleventy_login_form.png>
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 80 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
-EMBERSTACK
- []
-
-[80] [81]
-Overfull \hbox (9.24564pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 82 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
@@ -1206,6 +1202,12 @@ EMBERSTACK
  []
 
 [84] [85]
+Overfull \hbox (9.24564pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 86 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+EMBERSTACK
+ []
+
+[86] [87]
 File: images/eleventy-membership/memberstack_login_custom_form.png Graphic file
  (type bmp)
 <images/eleventy-membership/memberstack_login_custom_form.png>
@@ -1214,45 +1216,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 86 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
-EMBERSTACK
- []
-
-[86]
-File: images/eleventy-membership/surge_domain.png Graphic file (type bmp)
-<images/eleventy-membership/surge_domain.png>
-File: images/eleventy-membership/surge_homepage.png Graphic file (type bmp)
-<images/eleventy-membership/surge_homepage.png>
-[87]
-File: images/eleventy-membership/surge_deploy.png Graphic file (type bmp)
-<images/eleventy-membership/surge_deploy.png>
-
-Overfull \hbox (9.24564pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 88 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
 [88]
-File: images/eleventy-membership/eleventy_basic_plan_signup.png Graphic file (t
-ype bmp)
-<images/eleventy-membership/eleventy_basic_plan_signup.png>
+File: images/eleventy-membership/surge_domain.png Graphic file (type bmp)
+<images/eleventy-membership/surge_domain.png>
+File: images/eleventy-membership/surge_homepage.png Graphic file (type bmp)
+<images/eleventy-membership/surge_homepage.png>
 [89]
+File: images/eleventy-membership/surge_deploy.png Graphic file (type bmp)
+<images/eleventy-membership/surge_deploy.png>
+
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 90 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[90] [91]
-File: images/eleventy-membership/eleventy_premimum_plan_checkout.png Graphic fi
-le (type bmp)
-<images/eleventy-membership/eleventy_premimum_plan_checkout.png>
-
+[90]
+File: images/eleventy-membership/eleventy_basic_plan_signup.png Graphic file (t
+ype bmp)
+<images/eleventy-membership/eleventy_basic_plan_signup.png>
+[91]
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 92 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
 [92] [93]
+File: images/eleventy-membership/eleventy_premimum_plan_checkout.png Graphic fi
+le (type bmp)
+<images/eleventy-membership/eleventy_premimum_plan_checkout.png>
+
+Overfull \hbox (9.24564pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 94 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+EMBERSTACK
+ []
+
+[94] [95]
 File: images/eleventy-membership/memberstack_connect_to_stripe.png Graphic file
  (type bmp)
 <images/eleventy-membership/memberstack_connect_to_stripe.png>
@@ -1264,36 +1266,36 @@ Graphic file (type bmp)
 <images/eleventy-membership/memberstack_stripe_successfully_connected.png>
 
 Overfull \hbox (9.24564pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 94 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
-EMBERSTACK
- []
-
-[94] [95]
-Overfull \hbox (9.24564pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 96 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
 EMBERSTACK
  []
 
-[96]
+[96] [97]
+Overfull \hbox (9.24564pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 98 \TU/lmr/m/sl/10 CHAPTER 4.  MEMBERSHIP SITE WITH ELEVENTY & M
+EMBERSTACK
+ []
+
+[98]
 Chapter 5.
 File: images/gatsby-ecommerce/gatsby_default_starter.png Graphic file (type bmp
 )
 <images/gatsby-ecommerce/gatsby_default_starter.png>
-[97
+[99
 
 ]
-Overfull \hbox (10.96452pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 98 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STRI
-PE CHECKOUT
+Overfull \hbox (15.96452pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 100 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
+IPE CHECKOUT
  []
 
-[98]
-Overfull \hbox (25.15202pt too wide) in paragraph at lines 2103--2104
+[100]
+Overfull \hbox (25.15202pt too wide) in paragraph at lines 2145--2146
 []\TU/lmr/m/n/10 With both of these packages installed, we now need to add the 
 \TU/lmtt/m/n/10 gatsby-source-stripe
  []
 
-[99]
+[101]
 File: images/gatsby-ecommerce/stripe_developer_api_keys_sidebar.png Graphic fil
 e (type bmp)
 <images/gatsby-ecommerce/stripe_developer_api_keys_sidebar.png>
@@ -1301,18 +1303,18 @@ File: images/gatsby-ecommerce/stripe_standard_keys.png Graphic file (type bmp)
 <images/gatsby-ecommerce/stripe_standard_keys.png>
 
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 100 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
-IPE CHECKOUT
- []
-
-[100] [101]
-Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 102 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
  []
 
-[102]
-Overfull \hbox (156.31003pt too wide) in paragraph at lines 2254--2256
+[102] [103]
+Overfull \hbox (15.96452pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 104 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
+IPE CHECKOUT
+ []
+
+[104]
+Overfull \hbox (156.31003pt too wide) in paragraph at lines 2296--2298
 \TU/lmr/m/n/10 Now let’s set up and configure Stripe checkout. Head over to \TU
 /lmtt/m/n/10 https://dashboard.stripe.com/settings/checkout\TU/lmr/m/n/10 .
  []
@@ -1331,13 +1333,7 @@ File: images/gatsby-ecommerce/stripe_create_your_first_product_link.png Graphic
 File: images/gatsby-ecommerce/stripe_product_information.png Graphic file (type
  bmp)
 <images/gatsby-ecommerce/stripe_product_information.png>
-[103]
-Overfull \hbox (15.96452pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 104 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
-IPE CHECKOUT
- []
-
-[104] [105]
+[105]
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 106 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
@@ -1356,15 +1352,21 @@ IPE CHECKOUT
  []
 
 [110] [111]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 112 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
  []
 
 [112] [113]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (15.96452pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 114 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
+IPE CHECKOUT
+ []
+
+[114] [115]
 File: images/gatsby-ecommerce/gatsby_store_home_page.png Graphic file (type bmp
 )
 <images/gatsby-ecommerce/gatsby_store_home_page.png>
@@ -1375,17 +1377,17 @@ File: images/gatsby-ecommerce/stripe_successful_purchase.png Graphic file (type
 <images/gatsby-ecommerce/stripe_successful_purchase.png>
 
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 114 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
-IPE CHECKOUT
- []
-
-[114] [115]
-Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 116 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
  []
 
-[116]
+[116] [117]
+Overfull \hbox (15.96452pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 118 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
+IPE CHECKOUT
+ []
+
+[118]
 File: images/gatsby-ecommerce/vercel_dashboard.png Graphic file (type bmp)
 <images/gatsby-ecommerce/vercel_dashboard.png>
 File: images/gatsby-ecommerce/vercel_import_repo.png Graphic file (type bmp)
@@ -1396,53 +1398,53 @@ pe bmp)
 File: images/gatsby-ecommerce/vercel_successful_deploy.png Graphic file (type b
 mp)
 <images/gatsby-ecommerce/vercel_successful_deploy.png>
-[117]
-Overfull \hbox (15.96452pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 118 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
-IPE CHECKOUT
- []
-
-[118] [119]
+[119]
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 120 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
  []
 
-[120
-
-]
-File: images/jamstack-landscape.png Graphic file (type bmp)
-<images/jamstack-landscape.png>
-
-LaTeX Warning: Float too large for page by 36.45856pt on input line 2764.
-
-[121]
+[120] [121]
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 122 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
  []
 
-[122] [123]
+[122
+
+]
+File: images/jamstack-landscape.png Graphic file (type bmp)
+<images/jamstack-landscape.png>
+
+LaTeX Warning: Float too large for page by 36.45856pt on input line 2806.
+
+[123]
 Overfull \hbox (15.96452pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 124 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
 IPE CHECKOUT
  []
 
-[124]
+[124] [125]
+Overfull \hbox (15.96452pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 126 \TU/lmr/m/sl/10 CHAPTER 5.  ECOMMERCE SITE WITH GATSBY & STR
+IPE CHECKOUT
+ []
+
+[126]
 Missing character: There is no 雷 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 神 in font [lmroman10-regular]:mapping=tex-text;!
-[125] (./understanding-the-jamstack.aux)
+[127] (./understanding-the-jamstack.aux)
 Package rerunfilecheck Info: File `understanding-the-jamstack.out' has not chan
 ged.
-(rerunfilecheck)             Checksum: 869DC7A848E57986ED1CCEFD37CAAB9F;8182.
+(rerunfilecheck)             Checksum: 0D4AD6B65E84E83BA1E944E4197F8FE4;8625.
  ) 
 Here is how much of TeX's memory you used:
- 19178 strings out of 479290
- 355950 string characters out of 5875977
- 820752 words of memory out of 5000000
- 38286 multiletter control sequences out of 15000+600000
+ 19183 strings out of 479290
+ 356015 string characters out of 5875977
+ 820908 words of memory out of 5000000
+ 38291 multiletter control sequences out of 15000+600000
  409921 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,6n,118p,635b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on understanding-the-jamstack.pdf (125 pages).
+Output written on understanding-the-jamstack.pdf (127 pages).
