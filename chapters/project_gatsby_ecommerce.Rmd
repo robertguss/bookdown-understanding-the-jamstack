@@ -1,3 +1,5 @@
+# Ecommerce Site with Gatsby & Stripe Checkout
+
 _**This project builds on top of the [Gatsby E-commerce Tutorial](https://www.gatsbyjs.com/tutorial/ecommerce-tutorial) provided in the official Gatsby docs, and the [Use Shopping Cart Example repo](https://github.com/dayhaysoos/use-shopping-cart/tree/master/examples/gatsby).**_
 
 In this project, we will be creating a simple e-commerce web site with Gatbsy and Stripe checkout. Stripe checkout is client-side checkout that allows us to integrate a complete checkout experience without a backend.
