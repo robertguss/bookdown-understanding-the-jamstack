@@ -1,18 +1,15 @@
----
+--- 
 title: "Understanding the Jamstack"
 author: "Robert Guss"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+output: bookdown::gitbook
 documentclass: book
-# bibliography: [book.bib, packages.bib]
-# biblio-style: apalike
-# link-citations: yes
-description: "Understanding the Jamstack was written to help developers get a better understanding of the Jamstack
-architecture/philosophy and its ecosystem."
 url: 'https\://howtocode.io'
 github-repo: robertguss/howtocode-understanding-the-jamstack
 twitter-handle: howtocode_io
 cover-image: images/cover.png
+description: ""
 ---
 
 # Intro {-} 
