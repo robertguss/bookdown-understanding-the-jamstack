@@ -1,5 +1,11 @@
 # Membership Site with Eleventy & Memberstack
 
+## Screencast
+
+The screencast can be found [here](https://youtu.be/8MpPmSWXBX4)
+
+## Intro
+
 For this project, we are going to be building a membership site using the [Eleventy](https://www.11ty.dev/) static site generator and [Memberstack](https://www.memberstack.com/). We will then deploy our membership site with [Surge](https://surge.sh/).
 
 ## Installing Eleventy
