@@ -1,6 +1,31 @@
 # How to use this book {-}
 
+## GitHub Repo
+
 You can find the repo for all of the projects [here](https://github.com/robertguss/howtocode-understanding-the-jamstack)
 
-> Some of the images throughout the book can be hard to see/read. To see them better, click on the image, and it will
+## Images
+
+Some of the images throughout the book can be hard to see/read. To see them better, click on the image, and it will
 pop up into a lightbox at a much larger width and resolution.
+
+## Search
+
+The search feature in the toolbar at the top does not work unless the site is served over a server. The easiest way to
+do this, in my opinion, is via an npm package called "serve." To install it run the following command in your terminal.
+
+```bash
+npm i -g serve
+```
+
+Once it is installed, open your terminal to the directory of the book and run the following.
+
+```bash
+serve .
+``` 
+
+That will spin up a local server which you can visit at `http://localhost:5000`. 
+
+*Your port number might be different*.
+
+Once you navigate to this address in your browser, the seach feature will work.
