@@ -12,7 +12,7 @@ description: "Understanding the Jamstack was written to help developers get a be
 architecture/philosophy and its ecosystem."
 url: 'https\://howtocode.io'
 github-repo: robertguss/bookdown-understanding-the-jamstack
-twitter-handle: _howtocode_
+twitter-handle: howtocode_io
 cover-image: images/cover.png
 
 ---
