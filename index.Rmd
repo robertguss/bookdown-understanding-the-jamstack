@@ -1,5 +1,4 @@
 ---
-knit: "bookdown::render_book"
 title: "Understanding the Jamstack"
 author: "Robert Guss"
 date: "`r Sys.Date()`"
@@ -11,10 +10,9 @@ documentclass: book
 description: "Understanding the Jamstack was written to help developers get a better understanding of the Jamstack
 architecture/philosophy and its ecosystem."
 url: 'https\://howtocode.io'
-github-repo: robertguss/bookdown-understanding-the-jamstack
+github-repo: robertguss/howtocode-understanding-the-jamstack
 twitter-handle: howtocode_io
 cover-image: images/cover.png
-
 ---
 
 # Intro {-} 
